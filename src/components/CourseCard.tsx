@@ -2,7 +2,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, MessageCircle } from "lucide-react";
 
 interface CourseCardProps {
   title: string;
@@ -23,6 +23,19 @@ const CourseCard = ({
   price, 
   popular = false 
 }: CourseCardProps) => {
+  const handleRegister = () => {
+    // Registration logic can be added here
+    // For now, just scroll to the contact form
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleZaloContact = () => {
+    window.open("https://zalo.me/your-zalo-id", "_blank");
+  };
+
   return (
     <Card className={`course-card border ${popular ? 'border-brand-blue shadow-lg' : ''}`}>
       <CardHeader className="pb-3">
@@ -53,9 +66,22 @@ const CourseCard = ({
           <span className="text-2xl font-bold">{price}</span>
           <span className="text-muted-foreground">/ khóa học</span>
         </div>
-        <Button className={`w-full ${popular ? 'bg-brand-blue hover:bg-brand-darkBlue' : ''}`}>
-          Đăng Ký Ngay
-        </Button>
+        <div className="flex flex-col w-full gap-2">
+          <Button 
+            className={`w-full ${popular ? 'bg-brand-blue hover:bg-brand-darkBlue' : ''}`}
+            onClick={handleRegister}
+          >
+            Đăng Ký Ngay
+          </Button>
+          <Button 
+            variant="outline" 
+            className="w-full flex items-center gap-2"
+            onClick={handleZaloContact}
+          >
+            <MessageCircle size={16} className="text-[#0068ff]" />
+            Liên Hệ Zalo
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );
