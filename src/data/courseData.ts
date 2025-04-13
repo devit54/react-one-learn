@@ -155,45 +155,58 @@ export const courseData: Course[] = [
     longDescription: "Khóa học React & Next.js giúp bạn làm chủ các công nghệ hiện đại nhất trong phát triển frontend. Bạn sẽ học cách xây dựng các ứng dụng web đa nền tảng, nhanh chóng và tối ưu.",
     duration: "40 giờ",
     learningOutcomes: [
-      "Hiểu sâu về React và cách hoạt động của Components",
-      "Sử dụng thành thạo React Hooks và quản lý state",
-      "Xây dựng UI với các thư viện UI hiện đại như Tailwind CSS",
-      "Quản lý state phức tạp với Context API và Redux",
-      "Phát triển ứng dụng server-side rendering với Next.js",
-      "Xây dựng API routes và tích hợp authentication",
-      "Tối ưu hiệu năng cho ứng dụng React"
+      "Hiểu rõ khái niệm nền tảng của React, cách thức hoạt động và các thành phần cốt lõi",
+      "Thành thạo React Cơ bản, bao gồm cú pháp JSX, components, state, props, lifecycle",
+      "Làm chủ React Hooks, công cụ mạnh mẽ giúp viết code React dễ dàng, hiệu quả và tái sử dụng cao",
+      "Tự tin sử dụng React Router 7.x để tạo ứng dụng web SPA mượt mà, linh hoạt",
+      "Hiểu rõ cách thức quản lý state phức tạp với Context API và Redux",
+      "Tối ưu hóa hiệu suất ứng dụng React bằng Redux Toolkit",
+      "Học cách triển khai authentication cho ứng dụng React",
+      "Áp dụng các kỹ thuật tối ưu hóa ứng dụng React nâng cao",
+      "Hoàn thành project cuối môn, áp dụng kiến thức đã học vào thực tế"
     ],
     curriculum: [
       {
-        title: "Module 1: React Fundamentals",
+        title: "Khái Niệm Nền Tảng",
         lessons: [
-          "JSX và Components",
-          "Props và State",
-          "Lifecycle và useEffect hook",
-          "Event handling trong React",
-          "Thực hành: Xây dựng ứng dụng React đầu tiên"
+          "React là gì? Tại sao dùng React: Khái niệm React và lợi ích khi sử dụng",
+          "Virtual DOM: Hiểu cách Virtual DOM tăng hiệu suất",
+          "Imperative và Declarative: So sánh 2 cách lập trình trong React",
+          "Cài đặt môi trường: Thiết lập Node.js, Vite để phát triển",
+          "Cấu trúc folder: Làm quen với cách tổ chức dự án React"
         ]
       },
       {
-        title: "Module 2: React Hooks và State Management",
+        title: "JSX và kiến thức cơ bản",
         lessons: [
-          "useState và useEffect",
-          "useContext và useReducer",
-          "Custom hooks",
-          "Context API cho global state",
-          "Redux và Redux Toolkit",
-          "Thực hành: Xây dựng ứng dụng quản lý sản phẩm"
+          "JSX syntax và cách hoạt động",
+          "Components và Props",
+          "State và Lifecycle",
+          "Handling Events",
+          "Conditional Rendering"
         ]
       },
       {
-        title: "Module 3: Next.js",
+        title: "React Hooks",
         lessons: [
-          "Server-side rendering và Static site generation",
-          "File-based routing",
-          "API Routes",
-          "Authentication với NextAuth.js",
-          "Deployment và optimization",
-          "Thực hành: Xây dựng blog cá nhân với Next.js"
+          "useState & useEffect",
+          "useContext & useReducer",
+          "useMemo & useCallback",
+          "Custom Hooks",
+          "Rules of Hooks"
+        ]
+      },
+      {
+        title: "Advanced Topics",
+        lessons: [
+          "Context API",
+          "React Router DOM v7",
+          "Redux Toolkit",
+          "API CRUD với ExpressJS",
+          "Redux Thunk & API",
+          "Authentication & Authorization",
+          "Tối ưu ứng dụng React",
+          "Đồ Án Cuối Khoá"
         ]
       }
     ]
