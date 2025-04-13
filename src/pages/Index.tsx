@@ -7,56 +7,10 @@ import Features from '@/components/Features';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
-import { FileCode, Layout, Code, Layers } from 'lucide-react';
 import { Helmet } from 'react-helmet';
+import { courseData } from '@/data/courseData';
 
 const Index = () => {
-  const courses = [
-    {
-      title: "HTML & CSS Cơ Bản",
-      description: "Xây dựng nền tảng vững chắc với HTML5 và CSS3 hiện đại",
-      level: "Cơ bản" as const,
-      icon: <FileCode className="h-6 w-6 text-brand-blue" />,
-      features: [
-        "Thiết kế web responsive",
-        "Flexbox và Grid Layout",
-        "CSS Animation và Transitions",
-        "Dự án portfolio cá nhân",
-        "Hỗ trợ 1-1 từ giảng viên"
-      ],
-      price: "1.990.000đ",
-    },
-    {
-      title: "JavaScript Nâng Cao",
-      description: "Thành thạo JavaScript hiện đại và các frameworks phổ biến",
-      level: "Trung bình" as const,
-      icon: <Code className="h-6 w-6 text-brand-blue" />,
-      features: [
-        "ES6+ và JavaScript hiện đại",
-        "DOM Manipulation",
-        "Async/Await và Promises",
-        "HTTP Requests và APIs",
-        "Hỗ trợ 1-1 từ giảng viên"
-      ],
-      price: "2.990.000đ",
-      popular: true,
-    },
-    {
-      title: "React & Next.js",
-      description: "Xây dựng ứng dụng web hiện đại với React và Next.js",
-      level: "Nâng cao" as const,
-      icon: <Layers className="h-6 w-6 text-brand-blue" />,
-      features: [
-        "React Hooks và Context API",
-        "State Management với Redux",
-        "SSR và SSG với Next.js",
-        "API Routes và Authentication",
-        "Hỗ trợ 1-1 từ giảng viên"
-      ],
-      price: "3.990.000đ",
-    },
-  ];
-
   return (
     <>
       <Helmet>
@@ -93,7 +47,7 @@ const Index = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {courses.map((course, index) => (
+                {courseData.map((course, index) => (
                   <CourseCard
                     key={index}
                     {...course}

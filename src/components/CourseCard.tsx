@@ -3,8 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface CourseCardProps {
+  id: string;
   title: string;
   description: string;
   level: "Cơ bản" | "Trung bình" | "Nâng cao";
@@ -15,6 +17,7 @@ interface CourseCardProps {
 }
 
 const CourseCard = ({ 
+  id,
   title, 
   description, 
   level, 
@@ -37,30 +40,32 @@ const CourseCard = ({
   };
 
   return (
-    <Card className={`course-card border ${popular ? 'border-brand-blue shadow-lg' : ''}`}>
-      <CardHeader className="pb-3">
-        {popular && (
-          <Badge className="w-fit mb-2 bg-brand-blue">Phổ biến nhất</Badge>
-        )}
-        <div className="flex items-center justify-between">
-          <div className="h-12 w-12 rounded-full bg-brand-lightBlue flex items-center justify-center">
-            {icon}
-          </div>
-          <Badge variant="outline" className="text-xs">{level}</Badge>
-        </div>
-        <CardTitle className="text-xl font-bold">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardHeader>
-      <CardContent className="pb-3">
-        <div className="space-y-2">
-          {features.map((feature, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <CheckCircle size={16} className="text-green-500 shrink-0" />
-              <span className="text-sm">{feature}</span>
+    <Card className={`course-card border ${popular ? 'border-brand-blue shadow-lg' : ''} hover:shadow-md transition-shadow`}>
+      <Link to={`/khoa-hoc/${id}`} className="block">
+        <CardHeader className="pb-3">
+          {popular && (
+            <Badge className="w-fit mb-2 bg-brand-blue">Phổ biến nhất</Badge>
+          )}
+          <div className="flex items-center justify-between">
+            <div className="h-12 w-12 rounded-full bg-brand-lightBlue flex items-center justify-center">
+              {icon}
             </div>
-          ))}
-        </div>
-      </CardContent>
+            <Badge variant="outline" className="text-xs">{level}</Badge>
+          </div>
+          <CardTitle className="text-xl font-bold">{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+        </CardHeader>
+        <CardContent className="pb-3">
+          <div className="space-y-2">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <CheckCircle size={16} className="text-green-500 shrink-0" />
+                <span className="text-sm">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Link>
       <CardFooter className="flex flex-col items-start gap-4">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold">{price}</span>
