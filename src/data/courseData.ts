@@ -107,7 +107,7 @@ export const courseData: Course[] = [
     ],
     curriculum: [
       {
-        title: "Module 1: JavaScript Fundamentals",
+        title: "Khái Niệm Nền Tảng",
         lessons: [
           "Biến, kiểu dữ liệu và phạm vi",
           "Functions và arrow functions",
@@ -117,7 +117,7 @@ export const courseData: Course[] = [
         ]
       },
       {
-        title: "Module 2: DOM Manipulation",
+        title: "JSX và kiến thức cơ bản",
         lessons: [
           "Truy cập và thao tác với DOM",
           "Event handling",
@@ -127,13 +127,23 @@ export const courseData: Course[] = [
         ]
       },
       {
-        title: "Module 3: Asynchronous JavaScript",
+        title: "React Hooks",
         lessons: [
           "Callbacks và callback hell",
           "Promises và cách sử dụng",
           "Async/Await và error handling",
           "Fetch API và Axios",
           "Thực hành: Xây dựng ứng dụng lấy dữ liệu từ API"
+        ]
+      },
+      {
+        title: "Advanced Topics",
+        lessons: [
+          "Object-oriented JavaScript",
+          "Design patterns trong JavaScript",
+          "Testing với Jest",
+          "Performance optimization",
+          "Building và deploying JavaScript apps"
         ]
       }
     ]
