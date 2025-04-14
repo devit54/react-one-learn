@@ -20,6 +20,12 @@ export interface Course {
     title: string;
     lessons: string[];
   }[];
+  targetAudience?: string[];
+  courseBenefits?: {
+    title: string;
+    details: string[];
+    icon: React.ReactNode;
+  }[];
 }
 
 export const courseData: Course[] = [
@@ -98,53 +104,244 @@ export const courseData: Course[] = [
     longDescription: "Khóa học JavaScript nâng cao giúp bạn thành thạo ngôn ngữ lập trình phổ biến nhất hiện nay. Từ cú pháp ES6+ hiện đại đến xử lý bất đồng bộ và tương tác với APIs.",
     duration: "35 giờ",
     learningOutcomes: [
-      "Hiểu sâu về JavaScript và cách hoạt động của ngôn ngữ",
-      "Sử dụng thành thạo các tính năng của ES6+ và JavaScript hiện đại",
-      "Xây dựng ứng dụng web động với DOM Manipulation",
-      "Làm việc với dữ liệu bất đồng bộ qua Promises và Async/Await",
-      "Tương tác với REST APIs và xử lý dữ liệu JSON",
-      "Xây dựng ứng dụng web hoàn chỉnh với JavaScript thuần"
+      "Nắm vững kiến thức JavaScript từ con số 0, từ cú pháp cơ bản đến các khái niệm chuyên sâu, đảm bảo bạn có nền tảng vững chắc để tiếp tục phát triển kỹ năng trong tương lai.",
+      "Thành thạo các thuật toán phổ biến, rèn luyện tư duy logic, giải quyết vấn đề hiệu quả thông qua các thuật toán thường gặp trong lập trình.",
+      "Đủ khả năng xây dựng ứng dụng web hoàn chỉnh, đáp ứng mọi nhu cầu từ thị trường.",
+      "Tự tin tham gia các dự án thực tế, tích lũy kinh nghiệm và nâng cao kỹ năng.",
+      "Kỹ năng xử lý lỗi chuyên nghiệp, trang bị khả năng phát hiện, phân tích và sửa lỗi nhanh chóng, đảm bảo chương trình hoạt động ổn định và trơn tru.",
+      "Phát triển tư duy lập trình logic, rèn luyện tư duy sáng tạo, phân tích yêu cầu, xây dựng thuật toán tối ưu, tạo ra những ứng dụng thông minh và hiệu quả.",
+      "Mở ra cơ hội việc làm hấp dẫn, nắm vững kiến thức và kỹ năng cần thiết để tự tin ứng tuyển vào các công ty CNTT lớn, có mức lương cao và phúc lợi tốt."
     ],
     curriculum: [
       {
-        title: "Khái Niệm Nền Tảng",
+        title: "Định Hướng Và Cài Đặt Môi Trường",
         lessons: [
-          "Biến, kiểu dữ liệu và phạm vi",
-          "Functions và arrow functions",
-          "Objects, arrays và destructuring",
-          "ES6+ features: let/const, template literals, spread operator",
-          "Thực hành: JavaScript logic"
+          "Giới thiệu JS và chương trình: Tổng quan về JavaScript và lộ trình học.",
+          "Cài đặt VS Code: Hướng dẫn cài công cụ lập trình VS Code.",
+          "Giao diện VS Code: Làm quen với giao diện VS Code.",
+          "Khởi tạo dự án: Thiết lập dự án JavaScript đầu tiên.",
+          "Cài Live Server: Dùng Live Server để xem code thay đổi tức thì.",
+          "Dùng console.log: Hiển thị kết quả bằng console.log."
         ]
       },
       {
-        title: "JSX và kiến thức cơ bản",
+        title: "Nền Tảng",
         lessons: [
-          "Truy cập và thao tác với DOM",
-          "Event handling",
-          "Creating và removing elements",
-          "Local storage và session storage",
-          "Thực hành: Xây dựng ứng dụng To-do List"
+          "Biến: Khai báo và dùng biến để lưu dữ liệu.",
+          "Ghi chú: Viết ghi chú để quản lý code.",
+          "Kiểu dữ liệu cơ bản: Làm quen với số, chuỗi, boolean, v.v.",
+          "Array cơ bản: Dùng mảng để lưu danh sách dữ liệu.",
+          "Object cơ bản: Tổ chức dữ liệu bằng object.",
+          "Giá trị đặc biệt: null, undefined, NaN: Phân biệt các giá trị đặc biệt.",
+          "Chuyển đổi kiểu: Boolean, Number, String: Chuyển đổi giữa các kiểu dữ liệu"
         ]
       },
       {
-        title: "React Hooks",
+        title: "Toán Tử (Operators)",
         lessons: [
-          "Callbacks và callback hell",
-          "Promises và cách sử dụng",
-          "Async/Await và error handling",
-          "Fetch API và Axios",
-          "Thực hành: Xây dựng ứng dụng lấy dữ liệu từ API"
+          "Toán tử số học: cộng, trừ, nhân, chia: Dùng phép tính cơ bản.",
+          "Toán tử ++ và —: Tăng/giảm giá trị biến nhanh.",
+          "Toán tử %: Dùng phép chia lấy dư.",
+          "Toán tử gán: Gán giá trị kết hợp phép tính.",
+          "So sánh bằng và khác: So sánh giá trị và kiểu dữ liệu.",
+          "Các Toán tử so sánh còn lại: Lớn hơn, nhỏ hơn, v.v.",
+          "Toán tử logic: Kết hợp điều kiện với AND, OR, NOT.",
+          "Độ ưu tiên toán tử: Thứ tự thực hiện các toán tử.",
+          "Toán tử Ternary: Viết điều kiện ngắn gọn."
         ]
       },
       {
-        title: "Advanced Topics",
+        title: "Câu lệnh Điều kiện",
         lessons: [
-          "Object-oriented JavaScript",
-          "Design patterns trong JavaScript",
-          "Testing với Jest",
-          "Performance optimization",
-          "Building và deploying JavaScript apps"
+          "if: Chạy code dựa trên điều kiện cụ thể.",
+          "truthy, falsy: Hiểu giá trị true/false trong JS.",
+          "switch: Xử lý nhiều trường hợp thay if-else."
         ]
+      },
+      {
+        title: "Câu lệnh Vòng lặp",
+        lessons: [
+          "for: Lặp với số lần xác định.",
+          "while: Lặp khi điều kiện đúng.",
+          "do-while: Chạy ít nhất một lần trước khi kiểm tra.",
+          "Debug: Tìm và sửa lỗi bằng công cụ debug."
+        ]
+      },
+      {
+        title: "Các Thuật toán Cơ bản",
+        lessons: [
+          "Tính tổng: Tính tổng dãy số.",
+          "Cờ tín hiệu: Dùng biến cờ để điều khiển.",
+          "Tìm max, min: Tìm giá trị lớn/nhỏ nhất.",
+          "So sánh phần tử: So sánh phần tử hiện tại và trước đó."
+        ]
+      },
+      {
+        title: "Hàm Cơ bản",
+        lessons: [
+          "Khai báo: Định nghĩa hàm trong JS.",
+          "Parameter và argument: Truyền và dùng dữ liệu trong hàm.",
+          "Khai báo kiểu 2: Cú pháp khai báo hàm khác.",
+          "return: Trả giá trị từ hàm.",
+          "Hàm ẩn danh: Dùng hàm không tên."
+        ]
+      },
+      {
+        title: "HTML & CSS Cơ bản",
+        lessons: [
+          "HTML cơ bản: Cấu trúc cơ bản của một trang web.",
+          "CSS cơ bản: Định dạng và tạo kiểu cho trang web."
+        ]
+      },
+      {
+        title: "DOM & Event Cơ bản",
+        lessons: [
+          "Thuật ngữ: Hiểu DOM và Event.",
+          "Traverse: Di chuyển giữa các phần tử DOM.",
+          "Truy vấn: Chọn phần tử HTML bằng JS.",
+          "Thao tác attribute: Thay đổi thuộc tính HTML.",
+          "textContent, innerHTML: Sửa nội dung văn bản/HTML.",
+          "Thêm, xoá node: Tạo/xoá phần tử trên web.",
+          "Event cơ bản: Xử lý sự kiện như click, hover."
+        ]
+      },
+      {
+        title: "Scope",
+        lessons: [
+          "Scope là gì: Khái niệm phạm vi trong JS.",
+          "Global scope: Biến toàn cục.",
+          "Function scope: Biến cục bộ trong hàm.",
+          "Nested Scope: Phạm vi lồng nhau.",
+          "let, const: Quản lý biến với let, const.",
+          "use strict: Chế độ nghiêm ngặt tránh lỗi.",
+          "hoisting: Hiện tượng \"hoisting\" trong JS."
+        ]
+      },
+      {
+        title: "Giá trị Tham chiếu & Nguyên thủy",
+        lessons: [
+          "Giá trị nguyên thuỷ: Cách lưu số, chuỗi, v.v.",
+          "Giá trị tham chiếu: Cách object, array hoạt động.",
+          "Array là tham chiếu: Đặc điểm của mảng.",
+          "So sánh tham chiếu: So sánh giá trị và tham chiếu.",
+          "Truyền vào hàm: Truyền tham chiếu/nguyên thuỷ."
+        ]
+      },
+      {
+        title: "Hàm Nâng cao",
+        lessons: [
+          "Arrow function: Sử dụng cú pháp ngắn gọn và hiểu sự khác biệt với hàm thường.",
+          "Callback function: Truyền hàm làm tham số để xử lý bất đồng bộ.",
+          "Default parameters: Đặt giá trị mặc định cho tham số hàm.",
+          "Rest parameters: Thu thập nhiều tham số thành một mảng."
+        ]
+      },
+      {
+        title: "Array Nâng cao",
+        lessons: [
+          "Các hàm tiện ích trong array: Sử dụng map, filter, reduce, v.v. để thao tác mảng.",
+          "Array destructuring: Trích xuất dữ liệu từ mảng một cách gọn gàng.",
+          "for…of: Lặp qua mảng với cú pháp đơn giản và hiện đại."
+        ]
+      },
+      {
+        title: "Cách xác định từ khoá \"this\"",
+        lessons: [
+          "this tại Global: \"this\" trong phạm vi toàn cục.",
+          "this trong function và method: \"this\" trong các ngữ cảnh.",
+          "bind, call, apply: Thay đổi giá trị \"this\".",
+          "this trong arrow function: Đặc điểm của \"this\" trong arrow."
+        ]
+      },
+      {
+        title: "Object Nâng cao",
+        lessons: [
+          "Object destructuring: Trích xuất dữ liệu từ object một cách ngắn gọn.",
+          "Xoá thuộc tính: Loại bỏ thuộc tính khỏi object.",
+          "Truy cập bằng cặp dấu ngoặc vuông: Truy cập linh hoạt hơn so với dấu chấm.",
+          "Class: Định nghĩa và sử dụng class trong lập trình hướng đối tượng.",
+          "Kế thừa: Cơ chế kế thừa trong class, tái sử dụng code.",
+          "Override: Ghi đè phương thức từ class cha."
+        ]
+      },
+      {
+        title: "Thao tác với String",
+        lessons: [
+          "Các hàm tiện ích thao tác với string: Sử dụng split, join, v.v.",
+          "Template String (string literal): Viết chuỗi linh hoạt với cú pháp hiện đại."
+        ]
+      },
+      {
+        title: "Module (import/export)",
+        lessons: [
+          "Module là gì: Khái niệm module và lợi ích trong lập trình.",
+          "Export: Xuất biến, hàm hoặc class từ một file.",
+          "Import: Nhập dữ liệu từ module khác vào file hiện tại.",
+          "Default export/import: Export/import mặc định cho thành phần chính.",
+          "Named export/import: Xuất/nhập nhiều thành phần với tên cụ thể."
+        ]
+      },
+      {
+        title: "Bất đồng bộ",
+        lessons: [
+          "Bất đồng bộ là gì: Khái niệm bất đồng bộ.",
+          "Callback hell: Vấn đề lồng callback.",
+          "Promise: Quản lý bất đồng bộ với Promise.",
+          "Promise chain: Xâu chuỗi Promise.",
+          "Hàm Promise tiện ích: Dùng Promise.all, Promise.race, v.v.",
+          "async await: Viết code bất đồng bộ dễ đọc.",
+          "ajax (fetch): Gửi yêu cầu server bằng fetch."
+        ]
+      },
+      {
+        title: "Đồ Án Cuối Khoá",
+        lessons: [
+          "Ứng dụng thương mại điện tử (E-commerce)",
+          "Ứng dụng đặt đồ ăn (Food Delivery)",
+          "Ứng dụng học trực tuyến (E-learning)",
+          "Ứng dụng quản lý sinh viên",
+          "Hệ thống quản lý thư viện",
+          "Blog cá nhân",
+          "Hệ thống quản lý đặt phòng khách sạn",
+          "Ứng dụng theo dõi sức khỏe (Health Tracker)",
+          "Ứng dụng quản lý chi tiêu cá nhân",
+          "Mạng xã hội mini",
+          "...hoặc bất kỳ chủ đề nào dựa trên ý tưởng của học viên"
+        ]
+      }
+    ],
+    targetAudience: [
+      "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty.",
+      "Đang học lập trình nhưng mất gốc hoặc không tự tin.",
+      "Chưa có kiến thức lập trình (zero) và muốn bắt đầu học bài bản từ đầu.",
+      "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả.",
+      "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior)."
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty."
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!"
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LetDiv có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />
       }
     ]
   },
@@ -218,6 +415,41 @@ export const courseData: Course[] = [
           "Tối ưu ứng dụng React",
           "Đồ Án Cuối Khoá"
         ]
+      }
+    ],
+    targetAudience: [
+      "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty",
+      "Đang học lập trình nhưng mất gốc hoặc không tự tin",
+      "Chưa có kiến thức lập trình (zero) và muốn bắt đầu học bài bản từ đầu",
+      "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả",
+      "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior)",
+      "Đã có kiến thức cơ bản JavaScript"
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty."
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!"
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LetDiv có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />
       }
     ]
   }

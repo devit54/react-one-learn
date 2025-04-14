@@ -38,45 +38,6 @@ const CourseDetail = () => {
     window.open("https://zalo.me/your-zalo-id", "_blank");
   };
 
-  // Additional information for React course audience
-  const targetAudience = [
-    "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty",
-    "Đang học lập trình nhưng mất gốc hoặc không tự tin",
-    "Chưa có kiến thức lập trình (zero) và muốn bắt đầu học bài bản từ đầu",
-    "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả",
-    "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior)",
-    "Đã có kiến thức cơ bản JavaScript"
-  ];
-
-  // Course benefits for React course
-  const courseBenefits = [
-    {
-      title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
-      details: [
-        "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
-        "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
-        "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty."
-      ],
-      icon: <Users className="w-10 h-10 text-brand-blue" />
-    },
-    {
-      title: "Học online - Tiết kiệm thời gian di chuyển",
-      details: [
-        "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!"
-      ],
-      icon: <Laptop className="w-10 h-10 text-brand-blue" />
-    },
-    {
-      title: "Lịch học linh hoạt",
-      details: [
-        "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
-        "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
-        "LetDiv có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
-      ],
-      icon: <Calendar className="w-10 h-10 text-brand-blue" />
-    }
-  ];
-
   return (
     <>
       <Helmet>
@@ -203,42 +164,42 @@ const CourseDetail = () => {
                     </div>
                   </div>
                   
-                  {courseId === 'react-nextjs' && (
-                    <>
-                      <div>
-                        <h2 className="text-2xl font-bold mb-4">Đối tượng học</h2>
-                        <div className="space-y-4">
-                          {targetAudience.map((audience, index) => (
-                            <div key={index} className="flex items-start gap-2">
-                              <CheckCircle size={18} className="text-green-500 mt-1 shrink-0" />
-                              <span>{audience}</span>
-                            </div>
-                          ))}
-                        </div>
+                  {(courseId === 'react-nextjs' || courseId === 'javascript-advanced') && course.targetAudience && (
+                    <div>
+                      <h2 className="text-2xl font-bold mb-4">Đối tượng học</h2>
+                      <div className="space-y-4">
+                        {course.targetAudience.map((audience, index) => (
+                          <div key={index} className="flex items-start gap-2">
+                            <CheckCircle size={18} className="text-green-500 mt-1 shrink-0" />
+                            <span>{audience}</span>
+                          </div>
+                        ))}
                       </div>
-                      
-                      <div>
-                        <h2 className="text-2xl font-bold mb-4">Lợi ích khi tham gia khóa học</h2>
-                        <div className="space-y-8">
-                          {courseBenefits.map((benefit, index) => (
-                            <div key={index} className="border rounded-lg p-6">
-                              <div className="flex items-center gap-4 mb-4">
-                                {benefit.icon}
-                                <h3 className="text-xl font-bold">{benefit.title}</h3>
-                              </div>
-                              <ul className="space-y-2">
-                                {benefit.details.map((detail, detailIndex) => (
-                                  <li key={detailIndex} className="flex items-start gap-2">
-                                    <CheckCircle size={18} className="text-green-500 mt-1 shrink-0" />
-                                    <span>{detail}</span>
-                                  </li>
-                                ))}
-                              </ul>
+                    </div>
+                  )}
+                  
+                  {(courseId === 'react-nextjs' || courseId === 'javascript-advanced') && course.courseBenefits && (
+                    <div>
+                      <h2 className="text-2xl font-bold mb-4">Lợi ích khi tham gia khóa học</h2>
+                      <div className="space-y-8">
+                        {course.courseBenefits.map((benefit, index) => (
+                          <div key={index} className="border rounded-lg p-6">
+                            <div className="flex items-center gap-4 mb-4">
+                              {benefit.icon}
+                              <h3 className="text-xl font-bold">{benefit.title}</h3>
                             </div>
-                          ))}
-                        </div>
+                            <ul className="space-y-2">
+                              {benefit.details.map((detail, detailIndex) => (
+                                <li key={detailIndex} className="flex items-start gap-2">
+                                  <CheckCircle size={18} className="text-green-500 mt-1 shrink-0" />
+                                  <span>{detail}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
                       </div>
-                    </>
+                    </div>
                   )}
                 </div>
                 
