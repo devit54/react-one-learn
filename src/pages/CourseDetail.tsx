@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, CheckCircle, Users, Clock, Calendar, Laptop } from "lucide-react";
 import { Helmet } from 'react-helmet';
 import { courseData } from '@/data/courseData';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const CourseDetail = () => {
   const { courseId } = useParams();
@@ -173,25 +174,31 @@ const CourseDetail = () => {
                   </div>
                   
                   <div>
-                    <h2 className="text-2xl font-bold mb-4">Lộ trình học tập</h2>
+                    <h2 className="text-2xl font-bold mb-4">Nội dung khóa học</h2>
                     <div className="space-y-4">
-                      {course.curriculum && course.curriculum.map((module, index) => (
-                        <div key={index} className="border rounded-lg p-4">
-                          <h3 className="font-bold text-lg">{module.title}</h3>
-                          <ul className="mt-2 space-y-2">
-                            {module.lessons.map((lesson, lessonIndex) => (
-                              <li key={lessonIndex} className="flex items-start gap-2">
-                                <span className="w-6 h-6 rounded-full bg-brand-lightBlue text-brand-blue flex items-center justify-center text-sm font-medium">
-                                  {lessonIndex + 1}
-                                </span>
-                                <span>{lesson}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
+                      {course.curriculum && (
+                        <Accordion type="single" collapsible className="w-full">
+                          {course.curriculum.map((module, index) => (
+                            <AccordionItem key={index} value={`item-${index}`}>
+                              <AccordionTrigger className="font-bold text-lg">{module.title}</AccordionTrigger>
+                              <AccordionContent>
+                                <ul className="mt-2 space-y-2">
+                                  {module.lessons.map((lesson, lessonIndex) => (
+                                    <li key={lessonIndex} className="flex items-start gap-2">
+                                      <span className="w-6 h-6 rounded-full bg-brand-lightBlue text-brand-blue flex items-center justify-center text-sm font-medium">
+                                        {lessonIndex + 1}
+                                      </span>
+                                      <span>{lesson}</span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </AccordionContent>
+                            </AccordionItem>
+                          ))}
+                        </Accordion>
+                      )}
                       {!course.curriculum && (
-                        <p>Chi tiết lộ trình học tập sẽ được cung cấp khi bạn đăng ký khóa học.</p>
+                        <p>Chi tiết nội dung khóa học sẽ được cung cấp khi bạn đăng ký khóa học.</p>
                       )}
                     </div>
                   </div>
