@@ -1,6 +1,6 @@
 
 import React from "react";
-import { FileCode, Code, Layers } from "lucide-react";
+import { FileCode, Code, Layers, Users, Calendar, Laptop } from "lucide-react";
 
 export type CourseLevel = "Cơ bản" | "Trung bình" | "Nâng cao";
 
@@ -26,13 +26,15 @@ export interface Course {
     details: string[];
     icon: React.ReactNode;
   }[];
+  updateDate?: string;
+  students?: number;
 }
 
 export const courseData: Course[] = [
   {
     id: "html-css-basics",
-    title: "HTML & CSS Cơ Bản",
-    description: "Xây dựng nền tảng vững chắc với HTML5 và CSS3 hiện đại",
+    title: "Khóa Học HTML CSS Từ (1 Kèm 1 Online) – Cơ Bản Đến Nâng Cao",
+    description: "Khóa học Lập trình HTML & CSS từ Cơ Bản đến Nâng Cao giúp nắm vững kiến thức HTML & CSS một cách bài bản, tự tin xây dựng các trang web đẹp mắt, ấn tượng và hiển thị tốt trên nhiều thiết bị khác nhau.",
     level: "Cơ bản",
     icon: <FileCode className="h-6 w-6 text-brand-blue" />,
     features: [
@@ -43,46 +45,135 @@ export const courseData: Course[] = [
       "Hỗ trợ 1-1 từ giảng viên"
     ],
     price: "1.990.000đ",
-    longDescription: "Khóa học HTML & CSS cơ bản sẽ giúp bạn xây dựng nền tảng vững chắc trong lĩnh vực phát triển web. Bạn sẽ học cách tạo ra các trang web đẹp mắt, responsive và hiện đại.",
-    duration: "25 giờ",
+    updateDate: "02/2025",
+    students: 8891,
     learningOutcomes: [
-      "Hiểu cấu trúc HTML5 và các thẻ semantic",
-      "Thành thạo CSS3 và các thuộc tính styling hiện đại",
-      "Xây dựng layout với Flexbox và CSS Grid",
-      "Tạo các trang web responsive trên mọi thiết bị",
-      "Thiết kế hiệu ứng và animation với CSS",
-      "Xây dựng dự án portfolio cá nhân từ đầu đến cuối"
+      "Tự tin xây dựng và thiết kế website từ đầu đến cuối.",
+      "Nắm vững cú pháp HTML & CSS một cách bài bản và chuyên sâu.",
+      "Sử dụng thành thạo các công cụ và kỹ thuật lập trình web tiên tiến.",
+      "Biết cách tạo các trang web với giao diện bắt mắt, thu hút người dùng.",
+      "Có khả năng xây dựng các trang web tương thích với mọi thiết bị, từ máy tính đến điện thoại di động.",
+      "Tự tin tham gia các dự án lập trình web thực tế. Mở ra cơ hội phát triển sự nghiệp trong lĩnh vực lập trình web đầy tiềm năng."
     ],
     curriculum: [
       {
-        title: "Module 1: Nền tảng HTML",
+        title: "Giới Thiệu & Cài Đặt Môi Trường",
         lessons: [
-          "Cấu trúc HTML cơ bản",
-          "Các thẻ HTML phổ biến",
-          "HTML Semantic Elements",
-          "Forms và Input Fields",
-          "Thực hành: Xây dựng cấu trúc trang web"
+          "Giới thiệu lộ trình: Tổng quan về nội dung học.",
+          "Cài VS Code và Live Server: Thiết lập công cụ lập trình.",
+          "Khởi tạo folder dự án: Tạo thư mục cho dự án đầu tiên."
         ]
       },
       {
-        title: "Module 2: CSS Cơ bản và Selector",
+        title: "HTML Cơ Bản",
         lessons: [
-          "CSS Selectors và specificity",
-          "Box Model và Layout",
-          "Màu sắc, font chữ và styling text",
-          "Styling links và buttons",
-          "Thực hành: Styling cho trang web"
+          "Tổng quan HTML: Hiểu HTML và thẻ self-close.",
+          "Thẻ quan trọng: Dùng h1-h6, p, b, i, ul, ol, li, a, img, div, span.",
+          "Semantic HTML: Giới thiệu header, main, nav, section, article, aside, footer và so sánh với div."
         ]
       },
       {
-        title: "Module 3: Layout với Flexbox và CSS Grid",
+        title: "CSS Cơ Bản",
         lessons: [
-          "Flexbox layout",
-          "CSS Grid layout",
-          "Responsive design với media queries",
-          "Mobile-first approach",
-          "Thực hành: Xây dựng layout responsive"
+          "CSS là gì: Khái niệm cơ bản về CSS.",
+          "Nhúng CSS: Dùng inline, internal, external CSS.",
+          "Cú pháp CSS: Hiểu selector, property, value.",
+          "Selector cơ bản: Chọn theo thẻ, class, id, attribute (input[type=\"text\"]).",
+          "CSS chữ: Định dạng font-size, font-weight, font-family, color, line-height.",
+          "Selector nâng cao: Dùng div p, div > p, h1 + p.",
+          "Pseudo-class: Tập trung :hover, :active, :focus.",
+          "Border: Thiết lập viền cho phần tử.",
+          "Màu nền: Đặt background cho phần tử.",
+          "Thứ tự ưu tiên: Quy tắc áp dụng CSS.",
+          "Tính kế thừa: Hiểu cách CSS kế thừa thuộc tính.",
+          "Form cơ bản: Dùng <input>, <textarea>, <button>, <label>."
         ]
+      },
+      {
+        title: "CSS Box Model & Kích Thước Phần Tử",
+        lessons: [
+          "Universal Selector: Chọn tất cả phần tử với *.",
+          "box-sizing: Điều chỉnh cách tính kích thước.",
+          "Box model: Hiểu content, padding, border, margin.",
+          "Margin-collapse: Hiện tượng gộp margin.",
+          "Kích thước: Đặt width, height, max-width, v.v.",
+          "Display: Dùng block, inline, inline-block, none.",
+          "Canh giữa: Sử dụng margin để căn giữa block-level elements."
+        ]
+      },
+      {
+        title: "CSS Layout Cơ Bản",
+        lessons: [
+          "Định vị: Dùng static, relative, absolute, fixed.",
+          "Pseudo-element: Tập trung ::before, ::after.",
+          "Shadow: Thêm box-shadow, text-shadow.",
+          "Visibility và overflow: Ẩn/hiện và xử lý tràn nội dung.",
+          "object-fit: Điều chỉnh cách hiển thị ảnh/video.",
+          "z-index: Quản lý thứ tự lớp chồng lấn."
+        ]
+      },
+      {
+        title: "CSS Layout - Flex",
+        lessons: [
+          "Thuật ngữ: Hiểu khái niệm Flex cơ bản.",
+          "Flex container: Thiết lập hiển thị flex.",
+          "Flex item: Điều chỉnh các phần tử con.",
+          "object-fit: Tái khám phá thuộc tính này trong Flex.",
+          "Google Font: Thêm font từ Google vào web."
+        ]
+      },
+      {
+        title: "CSS Layout - Grid",
+        lessons: [
+          "Thuật ngữ: Hiểu khái niệm Grid cơ bản.",
+          "Grid vs Flexbox: So sánh và chọn cách dùng.",
+          "Grid container: Đặt grid-template-columns, grid-template-rows, gap.",
+          "Định vị trong Grid: Dùng grid-column, grid-row."
+        ]
+      },
+      {
+        title: "CSS Responsive Design (Media Queries)",
+        lessons: [
+          "Media Queries: Điều chỉnh giao diện theo kích thước màn hình.",
+          "Breakpoints: Đặt điểm ngắt cho mobile, tablet, desktop.",
+          "Đơn vị tương đối: Dùng %, vw, vh, rem, em để linh hoạt.",
+          "Ẩn/hiện phần tử: Điều chỉnh hiển thị trên các thiết bị.",
+          "Responsive hình ảnh: Tối ưu ảnh với max-width và object-fit."
+        ]
+      }
+    ],
+    targetAudience: [
+      "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty.",
+      "Đang học lập trình nhưng mất gốc hoặc không tự tin.",
+      "Chưa có kiến thức lập trình (zero) và muốn bắt đầu học bài bản từ đầu.",
+      "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả.",
+      "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior)."
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty."
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!"
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />
       }
     ]
   },

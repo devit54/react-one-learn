@@ -61,6 +61,25 @@ const CourseDetail = () => {
                   <Badge className="bg-white text-brand-blue mb-2">{course.level}</Badge>
                   <h1 className="text-3xl md:text-4xl font-bold">{course.title}</h1>
                   <p className="text-lg">{course.description}</p>
+                  
+                  {/* Show update date and students count if available */}
+                  {(course.updateDate || course.students) && (
+                    <div className="flex flex-wrap gap-4 text-sm">
+                      {course.updateDate && (
+                        <div>
+                          <div className="opacity-75">Ngày cập nhật</div>
+                          <div className="font-semibold">{course.updateDate}</div>
+                        </div>
+                      )}
+                      {course.students && (
+                        <div>
+                          <div className="opacity-75">Học viên</div>
+                          <div className="font-semibold">{course.students.toLocaleString()}</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  
                   <div className="flex items-center gap-2 text-lg">
                     <span className="font-bold">{course.price}</span>
                     <span>/ khóa học</span>
@@ -164,7 +183,7 @@ const CourseDetail = () => {
                     </div>
                   </div>
                   
-                  {(courseId === 'react-nextjs' || courseId === 'javascript-advanced') && course.targetAudience && (
+                  {course.targetAudience && (
                     <div>
                       <h2 className="text-2xl font-bold mb-4">Đối tượng học</h2>
                       <div className="space-y-4">
@@ -178,7 +197,7 @@ const CourseDetail = () => {
                     </div>
                   )}
                   
-                  {(courseId === 'react-nextjs' || courseId === 'javascript-advanced') && course.courseBenefits && (
+                  {course.courseBenefits && (
                     <div>
                       <h2 className="text-2xl font-bold mb-4">Lợi ích khi tham gia khóa học</h2>
                       <div className="space-y-8">
