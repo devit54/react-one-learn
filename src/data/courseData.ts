@@ -169,7 +169,7 @@ export const courseData: Course[] = [
       {
         title: "Lịch học linh hoạt",
         details: [
-          "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
           "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
           "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
         ],
@@ -428,9 +428,9 @@ export const courseData: Course[] = [
       {
         title: "Lịch học linh hoạt",
         details: [
-          "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
           "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
-          "LetDiv có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
         ],
         icon: <Calendar className="w-10 h-10 text-brand-blue" />
       }
@@ -536,9 +536,9 @@ export const courseData: Course[] = [
       {
         title: "Lịch học linh hoạt",
         details: [
-          "LetDiv sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
           "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
-          "LetDiv có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần."
         ],
         icon: <Calendar className="w-10 h-10 text-brand-blue" />
       }
