@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Code, BookOpen, Monitor, PenTool } from "lucide-react";
+import { Code, BookOpen, Monitor, PenTool, FolderGit } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="py-16 lg:py-20">
       <div className="container flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="flex-1 space-y-6 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading">
@@ -34,7 +34,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <BookOpen size={18} className="text-brand-blue" />
-              <span>Chứng chỉ quốc tế</span>
+              <span>Cam kết chất lượng</span>
             </div>
             <div className="flex items-center gap-2">
               <Monitor size={18} className="text-brand-blue" />
@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="bg-brand-lightBlue p-4 rounded-lg mb-4 w-full border border-brand-blue/20">
               <pre className="text-sm text-brand-darkBlue font-mono overflow-x-auto">
                 <code>
-                  {"const App = () => {\n  return <h1>Hello World!</h1>;\n};"}
+                  {"const App = () => {\n  return <h1>Hello World</h1>;\n};"}
                 </code>
               </pre>
             </div>
@@ -71,12 +71,24 @@ const Hero = () => {
 
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-brand-blue flex items-center justify-center text-white">
+                  <FolderGit size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold">Git</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Quản lý mã nguồn hiệu quả
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-full bg-brand-blue flex items-center justify-center text-white">
                   <Monitor size={20} />
                 </div>
                 <div>
-                  <h3 className="font-bold">React</h3>
+                  <h3 className="font-bold">React - Next.js</h3>
                   <p className="text-sm text-muted-foreground">
-                    Phát triển ứng dụng hiện đại
+                    Phát triển ứng dụng hiện đại - chuyên nghiệp
                   </p>
                 </div>
               </div>
