@@ -12,7 +12,8 @@ import {
   Calendar,
   Laptop,
 } from "lucide-react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 import { courseData } from "@/data/courseData";
 import {
   Accordion,

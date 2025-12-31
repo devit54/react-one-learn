@@ -6,7 +6,8 @@ import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 import { courseData } from "@/data/courseData";
 
 const Index = () => {
