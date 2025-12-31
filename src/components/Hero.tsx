@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Code, BookOpen, Monitor, PenTool } from "lucide-react";
 
@@ -8,15 +7,20 @@ const Hero = () => {
       <div className="container flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="flex-1 space-y-6 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading">
-            Làm chủ lập trình web với<br />
+            Làm chủ lập trình web với
+            <br />
             <span className="gradient-text">phương pháp dạy 1-1</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            Khám phá cách học lập trình hiệu quả với sự hướng dẫn cá nhân từ các chuyên gia.
-            Từ HTML, CSS đến JavaScript và React - chúng tôi giúp bạn trở thành lập trình viên web chuyên nghiệp.
+            Khám phá cách học lập trình hiệu quả với sự hướng dẫn cá nhân từ các
+            chuyên gia. Từ HTML, CSS đến JavaScript và React - chúng tôi giúp
+            bạn trở thành lập trình viên web chuyên nghiệp.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-brand-blue hover:bg-brand-darkBlue text-white">
+            <Button
+              size="lg"
+              className="bg-brand-blue hover:bg-brand-darkBlue text-white"
+            >
               Bắt Đầu Học Ngay
             </Button>
             <Button size="lg" variant="outline">
@@ -47,7 +51,9 @@ const Hero = () => {
           <div className="relative bg-white rounded-lg shadow-xl border p-6 lg:p-8">
             <div className="bg-brand-lightBlue p-4 rounded-lg mb-4 w-full border border-brand-blue/20">
               <pre className="text-sm text-brand-darkBlue font-mono overflow-x-auto">
-                <code>{'const App = () => {\n  return <h1>Hello World!</h1>;\n};'}</code>
+                <code>
+                  {"const App = () => {\n  return <h1>Hello World!</h1>;\n};"}
+                </code>
               </pre>
             </div>
             <div className="space-y-4">
@@ -57,17 +63,21 @@ const Hero = () => {
                 </div>
                 <div>
                   <h3 className="font-bold">HTML, CSS & JavaScript</h3>
-                  <p className="text-sm text-muted-foreground">Nền tảng web cần thiết</p>
+                  <p className="text-sm text-muted-foreground">
+                    Nền tảng web cần thiết
+                  </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-brand-blue flex items-center justify-center text-white">
                   <Monitor size={20} />
                 </div>
                 <div>
-                  <h3 className="font-bold">React & Next.js</h3>
-                  <p className="text-sm text-muted-foreground">Phát triển ứng dụng hiện đại</p>
+                  <h3 className="font-bold">React</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Phát triển ứng dụng hiện đại
+                  </p>
                 </div>
               </div>
             </div>

@@ -44,7 +44,7 @@ export const courseData: Course[] = [
       "Dự án portfolio cá nhân",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "4.000.000đ",
+    price: "5.500.000đ",
     updateDate: "12/2025",
     students: 8891,
     learningOutcomes: [
@@ -179,7 +179,7 @@ export const courseData: Course[] = [
   },
   {
     id: "javascript-advanced",
-    title: "JavaScript Nâng Cao",
+    title: "JavaScript",
     description: "Thành thạo JavaScript hiện đại và các frameworks phổ biến",
     level: "Trung bình",
     icon: <Code className="h-6 w-6 text-brand-blue" />,
@@ -190,11 +190,11 @@ export const courseData: Course[] = [
       "HTTP Requests và APIs",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "7.200.000đ",
+    price: "9.000.000đ",
     popular: true,
     longDescription:
-      "Khóa học JavaScript nâng cao giúp bạn thành thạo ngôn ngữ lập trình phổ biến nhất hiện nay. Từ cú pháp ES6+ hiện đại đến xử lý bất đồng bộ và tương tác với APIs.",
-    duration: "45 giờ (18 buổi)",
+      "Khóa học JavaScript giúp bạn thành thạo ngôn ngữ lập trình phổ biến nhất hiện nay. Từ cú pháp ES6+ hiện đại đến xử lý bất đồng bộ và tương tác với APIs.",
+    duration: "50 giờ (20 buổi)",
     learningOutcomes: [
       "Nắm vững kiến thức JavaScript từ con số 0, từ cú pháp cơ bản đến các khái niệm chuyên sâu, đảm bảo bạn có nền tảng vững chắc để tiếp tục phát triển kỹ năng trong tương lai.",
       "Thành thạo các thuật toán phổ biến, rèn luyện tư duy logic, giải quyết vấn đề hiệu quả thông qua các thuật toán thường gặp trong lập trình.",
@@ -439,21 +439,20 @@ export const courseData: Course[] = [
   },
   {
     id: "react-nextjs",
-    title: "React & Next.js",
-    description: "Xây dựng ứng dụng web hiện đại với React và Next.js",
+    title: "React",
+    description: "Xây dựng ứng dụng web hiện đại với React",
     level: "Nâng cao",
     icon: <Layers className="h-6 w-6 text-brand-blue" />,
     features: [
       "React Hooks và Context API",
       "State Management với Redux",
-      "SSR và SSG với Next.js",
       "API Routes và Authentication",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
     price: "8.990.000đ",
     longDescription:
-      "Khóa học React & Next.js giúp bạn làm chủ các công nghệ hiện đại nhất trong phát triển frontend. Bạn sẽ học cách xây dựng các ứng dụng web đa nền tảng, nhanh chóng và tối ưu.",
-    duration: "40 giờ (16 buổi)",
+      "Khóa học React giúp bạn làm chủ các công nghệ hiện đại nhất trong phát triển frontend. Bạn sẽ học cách xây dựng các ứng dụng web đa nền tảng, nhanh chóng và tối ưu.",
+    duration: "42 giờ (17 buổi)",
     learningOutcomes: [
       "Hiểu rõ khái niệm nền tảng của React, cách thức hoạt động và các thành phần cốt lõi",
       "Thành thạo React Cơ bản, bao gồm cú pháp JSX, components, state, props, lifecycle",
