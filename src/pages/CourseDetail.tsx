@@ -117,8 +117,8 @@ const CourseDetail = () => {
                       onClick={handleZaloContact}
                       className="bg-transparent border-white text-white hover:bg-white/10 flex items-center gap-2"
                     >
-                      <MessageCircle size={20} />
-                      Liên Hệ Qua Zalo
+                      <MessageCircle size={18} className="text-[#0068ff]" />
+                      Liên Hệ Zalo hoặc SDT: 0379 386 629 (Lợi)
                     </Button>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ const CourseDetail = () => {
                         <div className="text-sm text-muted-foreground">
                           Thời lượng
                         </div>
-                        <div>{course.duration || "22 giờ"}</div>
+                        <div>{course.duration || "15 giờ"}</div>
                       </div>
                       <div>
                         <div className="text-sm text-muted-foreground">
@@ -327,7 +327,7 @@ const CourseDetail = () => {
                           onClick={handleZaloContact}
                         >
                           <MessageCircle size={18} className="text-[#0068ff]" />
-                          Liên Hệ Zalo
+                          Liên Hệ Zalo hoặc SĐT: 0379 386 629 (Lợi)
                         </Button>
                       </div>
                     </div>
@@ -348,7 +348,11 @@ const CourseDetail = () => {
                   Đăng ký ngay hôm nay để nhận tư vấn miễn phí và ưu đãi đặc
                   biệt
                 </p>
-                <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <MessageCircle size={18} />
+                  Liên Hệ Zalo hoặc SĐT: 0379 386 629 (Lợi)
+                </div>
+                {/* <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                   <input
                     type="email"
                     placeholder="Nhập email của bạn"
@@ -361,7 +365,7 @@ const CourseDetail = () => {
                   >
                     Đăng Ký Ngay
                   </Button>
-                </form>
+                </form> */}
               </div>
             </div>
           </section>

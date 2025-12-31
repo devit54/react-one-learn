@@ -438,7 +438,7 @@ export const courseData: Course[] = [
     ],
   },
   {
-    id: "react-nextjs",
+    id: "react",
     title: "React",
     description: "Xây dựng ứng dụng web hiện đại với React",
     level: "Nâng cao",
@@ -516,6 +516,254 @@ export const courseData: Course[] = [
       "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả",
       "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior)",
       "Đã có kiến thức cơ bản JavaScript",
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty.",
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!",
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần.",
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />,
+      },
+    ],
+  },
+  {
+    id: "nextJs",
+    title: "NextJs",
+    description: "Xây dựng ứng dụng web hiện đại với Next.js",
+    level: "Nâng cao",
+    icon: <Layers className="h-6 w-6 text-brand-blue" />,
+    features: [
+      "Dynamic Routing và SSR",
+      "Xây dựng API Routes",
+      "Tích hợp Redux vào Next.js",
+      "Xác thực - phân quyền",
+      "Tối ưu về SEO",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "6.990.000đ",
+    longDescription:
+      "Khóa học Next.js sẽ giúp bạn làm chủ App Router và các tính năng mới nhất trong phiên bản Next.js 16. Học cách xây dựng ứng dụng web hiệu suất cao với thư viện Redux, tối ưu SEO, và triển khai nhanh chóng trên các nền tảng cloud như Vercel.",
+    duration: "30 giờ (12 buổi)",
+    learningOutcomes: [
+      "Hiểu rõ kiến trúc và lợi ích của App Router trong Next.js 16.",
+      "Thành thạo quản lý routes, layouts, và nested routing trong App Router.",
+      "Tích hợp các phương pháp lấy dữ liệu như fetching trong Server Components.",
+      "Triển khai hệ thống Authentication & Authorization an toàn với JWT.",
+      "Xây dựng ứng dụng web hiệu suất cao với Server Components và Client Components.",
+      "Áp dụng Redux để quản lý trạng thái toàn cục của ứng dụng.",
+      "Xây dựng API routes và xử lý middleware để kiểm soát truy cập.",
+      "Tối ưu hóa và triển khai ứng dụng Next.js lên các nền tảng cloud như Vercel.",
+    ],
+    curriculum: [
+      {
+        title: "Giới thiệu về Next.js 16 và App Router",
+        lessons: [
+          "Tổng quan về Next.js 16 và những cải tiến mới.",
+          "Hiểu về App Router: Lợi ích và sự khác biệt so với Pages Router.",
+          "Thiết lập môi trường phát triển Next.js 16.",
+        ],
+      },
+      {
+        title: "Kiến trúc App Router",
+        lessons: [
+          "Cấu trúc thư mục trong App Router.",
+          "Giới thiệu app/ directory.",
+          "Cấu hình routes với App Router.",
+        ],
+      },
+      {
+        title: "Server Components và Client Components",
+        lessons: [
+          "Sự khác biệt giữa Server Components và Client Components.",
+          "Khi nào sử dụng Server Components.",
+          "Tích hợp Server Components vào App Router.",
+        ],
+      },
+      {
+        title: "Data Fetching trong App Router",
+        lessons: [
+          "Tính năng React Server Components và cách nó hoạt động.",
+          "Sử dụng fetch và các phương thức khác trong Server Components.",
+          "Dynamic routes với App Router",
+          "Lấy dữ liệu phía client với React hooks.",
+        ],
+      },
+      {
+        title: "Layouts và Nested Routing",
+        lessons: [
+          "Tạo Layouts với App Router.",
+          "Nested routing và phân quyền.",
+          "Tích hợp Middleware trong App Router.",
+        ],
+      },
+      {
+        title: "Quản lý trạng thái với Redux trong Next.js",
+        lessons: [
+          "Giới thiệu về Redux và khi nào cần sử dụng nó.",
+          "Thiết lập Redux trong ứng dụng Next.js 14.",
+          "Tích hợp Redux với App Router và quản lý trạng thái giữa các components.",
+          "Sử dụng Redux Toolkit: Tạo slice và quản lý actions, reducers.",
+        ],
+      },
+      {
+        title: "Form Handling và Xử lý dữ liệu người dùng",
+        lessons: [
+          "Cách xử lý form submission với App Router.",
+          "Xác thực dữ liệu và xử lý lỗi.",
+          "Tích hợp các thư viện React Hook Form.",
+        ],
+      },
+      {
+        title: "API Routes và Middleware",
+        lessons: [
+          "Giới thiệu về API routes trong App Router.",
+          "Tạo các API route với App Router.",
+          "Sử dụng Middleware để kiểm soát truy cập.",
+        ],
+      },
+      {
+        title: "Authentication & Authorization",
+        lessons: [
+          "Tích hợp các phương pháp xác thực người dùng với JWT.",
+          "Quản lý phiên đăng nhập và bảo mật với Cookies, Session.",
+        ],
+      },
+      {
+        title: "Tối ưu hóa và triển khai ứng dụng",
+        lessons: [
+          "Tối ưu hóa hiệu năng ứng dụng Next.js 16.",
+          "Tối ưu hóa cho SEO với App Router.",
+          "Triển khai ứng dụng Next.js lên Vercel.",
+        ],
+      },
+    ],
+    targetAudience: [
+      "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty",
+      "Đang học lập trình nhưng mất gốc hoặc không tự tin",
+      "Chưa có kiến thức lập trình (zero) và muốn bắt đầu học bài bản từ đầu",
+      "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả",
+      "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior)",
+      "Đã có kiến thức cơ bản React. Nếu chưa nắm vững React, bạn nên học trước React",
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty.",
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!",
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần.",
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />,
+      },
+    ],
+  },
+  {
+    id: "Git",
+    title: "Khóa Học Git Từ Cơ Bản Đến Nâng Cao",
+    description:
+      "Chinh phục kiến thức Git toàn diện từ A đến Z. Hệ thống bài giảng chi tiết, bám sát thực tế, giúp bạn nắm vững kiến thức Git từ cơ bản đến nâng cao.",
+    level: "Cơ bản",
+    icon: <FileCode className="h-6 w-6 text-brand-blue" />,
+    duration: "15 giờ (6 buổi)",
+    features: [
+      "Thiết lập git và GitHub",
+      "Các lệnh Git cơ bản và nâng cao",
+      "Deploy dự án lên GitHub",
+      "Quản lý các phiên bản thay đổi tiện lợi, nhanh chóng",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "2.500.000đ",
+    updateDate: "12/2025",
+    students: 10000,
+    learningOutcomes: [
+      "Nắm vững các khái niệm Git cơ bản: repository, branch, commit, merge, HEAD, working directory, staging area,...",
+      "Khám phá các tính năng nâng cao của Git: giải quyết xung đột branch, merge code chuyên nghiệp,...",
+      "Nắm vững các nguyên tắc làm việc nhóm hiệu quả với Git: quản lý branch, giải quyết xung đột code, đồng bộ hóa dự án,...",
+      "Kỹ năng đồng bộ dữ liệu giữa máy tính và GitHub một cách hiệu quả.",
+      "Hiểu rõ quy trình làm việc với Git: khởi tạo repository, theo dõi thay đổi, lưu trữ và chia sẻ mã nguồn hiệu quả.",
+      "Thành thạo các lệnh thao tác với Git: clone, add, commit, push, pull, fetch, merge,...",
+      "Khả năng thiết lập và sử dụng GitHub, nền tảng quản lý kho lưu trữ Git phổ biến nhất.",
+      "Nắm vững Git Flow - quy trình làm việc hiệu quả với Git cho các dự án phần mềm.",
+    ],
+    curriculum: [
+      {
+        title: "Giới Thiệu & Cài Đặt Môi Trường",
+        lessons: [
+          "Cài đặt môi trường: Cài Git trên máy tính.",
+          "VCS và Git: Hiểu hệ thống quản lý phiên bản và Git.",
+          "Repository: Khái niệm kho lưu trữ code.",
+          "Commit: Ghi lại thay đổi trong dự án.",
+          "Vùng làm việc: Làm quen Working Directory, Staging Area.",
+          "Vẽ sơ đồ: Thực hành minh họa vùng làm việc Git.",
+        ],
+      },
+      {
+        title: "Thiết Lập & Quản Lý Thay Đổi",
+        lessons: [
+          "Cấu hình Git: Dùng git config để thiết lập thông tin.",
+          "Gộp nhánh: Kết hợp nhánh bằng git merge, xóa nhánh với git branch -d.",
+          "Hoàn tác thay đổi: Dùng git restore, git revert để quay lại.",
+          "Thực hành: Tạo branch, merge và xử lý xung đột cơ bản.",
+        ],
+      },
+      {
+        title: "Remote & GitHub - Làm Việc Nhóm",
+        lessons: [
+          "Kết nối Remote: Liên kết với remote repository bằng git remote add.",
+          "Đẩy và kéo code: Dùng git push, git pull, git fetch để đồng bộ.",
+          "GitHub: Tạo Repository và Pull Request trên GitHub.",
+          "Thực hành: Đẩy code và tạo PR trên GitHub.",
+        ],
+      },
+      {
+        title: "Quy Trình Thực Tế (Git Flow)",
+        lessons: [
+          "Git Flow: Quy trình làm việc với nhánh tính năng.",
+          "Thực hành dự án: Tạo branch, đẩy code, tạo PR cho dự án mẫu.",
+        ],
+      },
+    ],
+    targetAudience: [
+      "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty.",
+      "Đang học lập trình nhưng mất gốc hoặc không tự tin.",
+      "Chưa có kiến thức lập trình (zero) và muốn bắt đầu học bài bản từ đầu.",
+      "Làm trái ngành và mong muốn chuyển đổi sang lĩnh vực lập trình an toàn và hiệu quả.",
+      "Đang đi làm nhưng muốn cải thiện kiến thức để tiến xa hơn trong sự nghiệp (senior).",
     ],
     courseBenefits: [
       {

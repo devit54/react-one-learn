@@ -1,7 +1,13 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -16,22 +22,22 @@ interface CourseCardProps {
   popular?: boolean;
 }
 
-const CourseCard = ({ 
+const CourseCard = ({
   id,
-  title, 
-  description, 
-  level, 
-  icon, 
-  features, 
-  price, 
-  popular = false 
+  title,
+  description,
+  level,
+  icon,
+  features,
+  price,
+  popular = false,
 }: CourseCardProps) => {
   const handleRegister = () => {
     // Registration logic can be added here
     // For now, just scroll to the contact form
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -40,7 +46,11 @@ const CourseCard = ({
   };
 
   return (
-    <Card className={`course-card border ${popular ? 'border-brand-blue shadow-lg' : ''} hover:shadow-md transition-shadow`}>
+    <Card
+      className={`course-card border ${
+        popular ? "border-brand-blue shadow-lg" : ""
+      } hover:shadow-md transition-shadow`}
+    >
       <Link to={`/khoa-hoc/${id}`} className="block">
         <CardHeader className="pb-3">
           {popular && (
@@ -50,7 +60,9 @@ const CourseCard = ({
             <div className="h-12 w-12 rounded-full bg-brand-lightBlue flex items-center justify-center">
               {icon}
             </div>
-            <Badge variant="outline" className="text-xs">{level}</Badge>
+            <Badge variant="outline" className="text-xs">
+              {level}
+            </Badge>
           </div>
           <CardTitle className="text-xl font-bold">{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
@@ -72,20 +84,22 @@ const CourseCard = ({
           <span className="text-muted-foreground">/ khóa học</span>
         </div>
         <div className="flex flex-col w-full gap-2">
-          <Button 
-            className={`w-full ${popular ? 'bg-brand-blue hover:bg-brand-darkBlue' : ''}`}
+          <Button
+            className={`w-full ${
+              popular ? "bg-brand-blue hover:bg-brand-darkBlue" : ""
+            }`}
             onClick={handleRegister}
           >
-            Đăng Ký Ngay
+            Liên Hệ Đăng Ký
           </Button>
-          <Button 
+          {/* <Button 
             variant="outline" 
             className="w-full flex items-center gap-2"
             onClick={handleZaloContact}
           >
             <MessageCircle size={16} className="text-[#0068ff]" />
             Liên Hệ Zalo
-          </Button>
+          </Button> */}
         </div>
       </CardFooter>
     </Card>
