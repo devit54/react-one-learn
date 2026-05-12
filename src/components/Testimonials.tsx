@@ -13,7 +13,7 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    name: "Nguyễn Văn A",
+    name: "Nguyễn Đức Quang",
     role: "Frontend Developer",
     content:
       "Khóa học 1-1 về React đã giúp tôi tiến bộ rất nhanh. Giảng viên rất kiên nhẫn và luôn có những giải thích dễ hiểu cho các khái niệm phức tạp.",
@@ -22,16 +22,16 @@ const testimonials: TestimonialProps[] = [
     rating: 5,
   },
   {
-    name: "Trần Thị B",
-    role: "UI/UX Designer",
+    name: "Phạm Sĩ Mạnh Tiến",
+    role: "Trái ngành",
     content:
-      "Tôi đã học khóa HTML & CSS và rất hài lòng với cách tiếp cận cá nhân hóa. Giờ đây tôi có thể tự tin thiết kế và xây dựng giao diện web chuyên nghiệp.",
+      "Tôi đã học khóa JS, React và rất hài lòng với cách tiếp cận cá nhân hóa. Giờ đây tôi có thể tự tin thiết kế và xây dựng giao diện web chuyên nghiệp.",
     avatar: "/placeholder.svg",
     initials: "TTB",
     rating: 5,
   },
   {
-    name: "Lê Văn C",
+    name: "Mạch Chí Lập",
     role: "Sinh viên CNTT",
     content:
       "Từ không biết gì về lập trình, sau 3 tháng học JavaScript 1-1, tôi đã có thể tự phát triển ứng dụng web. Cảm ơn các giảng viên tận tâm!",
