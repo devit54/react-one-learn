@@ -1,17 +1,9 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  MessageCircle,
-  CheckCircle,
-  Users,
-  Clock,
-  Calendar,
-  Laptop,
-} from "lucide-react";
+import { MessageCircle, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 import { courseData } from "@/data/courseData";
@@ -118,8 +110,8 @@ const CourseDetail = () => {
                       onClick={handleZaloContact}
                       className="bg-transparent border-white text-white hover:bg-white/10 flex items-center gap-2"
                     >
-                      <MessageCircle size={18} className="text-[#0068ff]" />
-                      Liên Hệ Zalo hoặc SDT: 0379 386 629 (Lợi)
+                      <MessageCircle size={18} className="text-[#0068ff] shrink-0" />
+                      <span>Zalo / SĐT: 0379 386 629</span>
                     </Button>
                   </div>
                 </div>
@@ -146,7 +138,7 @@ const CourseDetail = () => {
           <section className="py-16">
             <div className="container">
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="md:col-span-2 space-y-8">
+                <div className="md:col-span-2 space-y-8 order-2 md:order-1">
                   <div>
                     <h2 className="text-2xl font-bold mb-4">
                       Giới thiệu khóa học
@@ -285,8 +277,8 @@ const CourseDetail = () => {
                 </div>
 
                 {/* Sidebar */}
-                <div className="space-y-6">
-                  <div className="border rounded-lg p-6 sticky top-24">
+                <div className="space-y-6 order-1 md:order-2">
+                  <div className="border rounded-lg p-6 md:sticky md:top-24">
                     <h3 className="text-xl font-bold mb-4">
                       Thông tin khóa học
                     </h3>
@@ -324,11 +316,11 @@ const CourseDetail = () => {
                         </Button>
                         <Button
                           variant="outline"
-                          className="w-full flex items-center justify-center gap-2"
+                          className="w-full flex items-center justify-center gap-2 text-sm"
                           onClick={handleZaloContact}
                         >
-                          <MessageCircle size={18} className="text-[#0068ff]" />
-                          Liên Hệ Zalo hoặc SĐT: 0379 386 629 (Lợi)
+                          <MessageCircle size={16} className="text-[#0068ff] shrink-0" />
+                          <span>Zalo / SĐT: 0379 386 629</span>
                         </Button>
                       </div>
                     </div>

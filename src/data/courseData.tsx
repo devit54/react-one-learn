@@ -1,5 +1,5 @@
 import React from "react";
-import { FileCode, Code, Layers, Users, Calendar, Laptop } from "lucide-react";
+import { FileCode, Code, Layers, Users, Calendar, Laptop, Coffee, Cpu } from "lucide-react";
 
 export type CourseLevel = "Cơ bản" | "Trung bình" | "Nâng cao";
 
@@ -792,5 +792,454 @@ export const courseData: Course[] = [
         icon: <Calendar className="w-10 h-10 text-brand-blue" />,
       },
     ],
+  },
+  {
+    id: "oop",
+    title: "Khóa Học Lập Trình Hướng Đối Tượng (OOP)",
+    description: "Nắm vững tư duy và kỹ thuật lập trình hướng đối tượng – nền tảng cốt lõi cho mọi ngôn ngữ lập trình hiện đại.",
+    level: "Cơ bản",
+    icon: <Layers className="h-6 w-6 text-brand-blue" />,
+    features: [
+      "Bốn nguyên lý OOP: Encapsulation, Inheritance, Polymorphism, Abstraction",
+      "Thiết kế Class và Object bài bản",
+      "Abstract Class và Interface",
+      "Thực hành bài tập cuối chương",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "4.000.000đ",
+    longDescription:
+      "Khóa học Lập Trình Hướng Đối Tượng (OOP) giúp bạn nắm vững tư duy thiết kế phần mềm hiện đại. Từ khái niệm Class, Object đến 4 tính chất cốt lõi: Encapsulation, Inheritance, Abstraction và Polymorphism – bạn sẽ có nền tảng vững chắc để học bất kỳ ngôn ngữ lập trình nào.",
+    duration: "20 giờ (8 buổi)",
+    learningOutcomes: [
+      "Hiểu rõ sự khác biệt giữa lập trình thủ tục và lập trình hướng đối tượng.",
+      "Định nghĩa và sử dụng Class, Object, Attributes, Methods thành thạo.",
+      "Nắm vững vai trò của Constructor và từ khóa this.",
+      "Áp dụng Tính Đóng Gói (Encapsulation) với Access Modifiers, Getter và Setter.",
+      "Triển khai Kế Thừa (Inheritance) với extends, Method Overriding và từ khóa super.",
+      "Hiểu và sử dụng Abstract Class và Interface để đạt Tính Trừu Tượng (Abstraction).",
+      "Vận dụng Tính Đa Hình (Polymorphism): Runtime Polymorphism và Interface Polymorphism.",
+      "Tự tin tham gia các dự án OOP thực tế và học các framework hiện đại.",
+    ],
+    curriculum: [
+      {
+        title: "Giới Thiệu OOP",
+        lessons: [
+          "Lập trình thủ tục vs lập trình hướng đối tượng: Sự khác biệt và lý do cần OOP.",
+          "Giới thiệu 4 tính chất OOP: Encapsulation, Inheritance, Polymorphism, Abstraction.",
+          "Ví dụ thực tế: Mô hình hóa thế giới thực vào chương trình máy tính.",
+          "Lợi ích OOP: Tái sử dụng code, dễ bảo trì và mở rộng.",
+        ],
+      },
+      {
+        title: "Class và Object",
+        lessons: [
+          "Lớp (Class): Bản thiết kế – khai báo bằng từ khóa class.",
+          "Đối tượng (Object): Thể hiện cụ thể của lớp – tạo bằng từ khóa new.",
+          "Mối quan hệ Class → Object: Một lớp có thể tạo ra nhiều đối tượng.",
+          "Cú pháp khai báo lớp và khởi tạo đối tượng.",
+        ],
+      },
+      {
+        title: "Thuộc Tính (Attributes) và Phương Thức (Methods)",
+        lessons: [
+          "Thuộc tính (Attributes): Biến lưu trữ trạng thái đặc trưng của đối tượng.",
+          "Phương thức (Methods): Hàm định nghĩa hành vi của đối tượng.",
+          "Cú pháp khai báo thuộc tính và phương thức trong Java.",
+          "Truy cập thuộc tính và gọi phương thức bằng toán tử dấu chấm (.).",
+          "Ví dụ xuyên suốt: Lớp SinhVien với các thuộc tính maSV, hoTen, diemTB.",
+        ],
+      },
+      {
+        title: "Hàm Tạo (Constructor) & Từ Khóa this",
+        lessons: [
+          "Constructor là gì: Phương thức đặc biệt được gọi tự động khi tạo đối tượng.",
+          "Hàm tạo mặc định (Default Constructor) và hàm tạo có tham số.",
+          "Nạp chồng Constructor (Constructor Overloading).",
+          "Từ khóa this: Phân biệt thuộc tính lớp và tham số cùng tên.",
+          "Bài tập cuối chương.",
+        ],
+      },
+      {
+        title: "Tính Đóng Gói (Encapsulation)",
+        lessons: [
+          "Vấn đề khi truy cập trực tiếp dữ liệu: Mất kiểm soát, dữ liệu không hợp lệ.",
+          "Access Modifiers: private, public, protected, default – bảng so sánh phạm vi truy cập.",
+          "Getter Methods: Cung cấp quyền đọc thuộc tính private.",
+          "Setter Methods: Kiểm soát việc thay đổi dữ liệu (có validation).",
+          "Ví dụ hoàn chỉnh: Refactor lớp Student với private fields và public getter/setter.",
+          "Bài tập cuối chương.",
+        ],
+      },
+      {
+        title: "Tính Kế Thừa (Inheritance)",
+        lessons: [
+          "Khái niệm kế thừa: Mối quan hệ IS-A, lớp cha (Superclass) và lớp con (Subclass).",
+          "Từ khóa extends: Cú pháp khai báo lớp con.",
+          "Những thành phần được kế thừa: public, protected và private.",
+          "Đơn kế thừa trong Java và lý do tránh đa kế thừa lớp.",
+          "Ghi đè phương thức (Method Overriding) và annotation @Override.",
+          "Từ khóa super: Gọi constructor lớp cha và truy cập phương thức/thuộc tính lớp cha.",
+          "Bài tập cuối chương.",
+        ],
+      },
+      {
+        title: "Tính Trừu Tượng (Abstraction)",
+        lessons: [
+          "Khái niệm trừu tượng: Tập trung vào 'Cái gì' thay vì 'Làm thế nào'.",
+          "Abstract Class: Khai báo, abstract method, đặc điểm và quy tắc.",
+          "Interface: Khai báo, abstract methods, constants, default/static methods (Java 8+).",
+          "Đa kế thừa kiểu qua Interface: Một lớp implements nhiều interface.",
+          "So sánh Abstract Class vs Interface: Khi nào dùng cái nào.",
+          "Bài tập cuối chương.",
+        ],
+      },
+      {
+        title: "Tính Đa Hình (Polymorphism)",
+        lessons: [
+          "Khái niệm đa hình: Compile-time Polymorphism và Runtime Polymorphism.",
+          "Runtime Polymorphism qua Method Overriding và Upcasting.",
+          "Dynamic Method Dispatch: JVM xác định phương thức nào được gọi tại thời điểm chạy.",
+          "Đa hình với Interface: 'Lập trình theo Interface' (Programming to an Interface).",
+          "Ép kiểu đối tượng: Upcasting (an toàn) và Downcasting (tiềm ẩn rủi ro).",
+          "Toán tử instanceof và xử lý ClassCastException.",
+          "Bài tập cuối chương.",
+        ],
+      },
+    ],
+    targetAudience: [
+      "Sinh viên CNTT mong muốn bổ túc kiến thức để đủ điều kiện đi làm công ty.",
+      "Đang học lập trình nhưng chưa hiểu rõ tư duy OOP.",
+      "Đã biết lập trình cơ bản và muốn học cách thiết kế code chuyên nghiệp hơn.",
+      "Chuẩn bị học các ngôn ngữ/framework như Java, C++, C#, Python OOP.",
+      "Đang đi làm nhưng muốn cải thiện kỹ năng thiết kế phần mềm.",
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty.",
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!",
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần.",
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />,
+      },
+    ],
+  },
+  {
+    id: "cpp-basics",
+    title: "Khóa Học C++ Từ Cơ Bản Đến Thành Thạo",
+    description: "Học lập trình C++ từ nền tảng – ngôn ngữ mạnh mẽ được dùng rộng rãi trong hệ thống, game, nhúng và thi đấu lập trình.",
+    level: "Cơ bản",
+    icon: <Code className="h-6 w-6 text-brand-blue" />,
+    features: [
+      "Cú pháp C++ từ Hello World đến con trỏ",
+      "Hàm, mảng, chuỗi và sắp xếp",
+      "Con trỏ, tham chiếu và quản lý bộ nhớ động",
+      "Thực hành code trực tiếp mỗi buổi",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "4.500.000đ",
+    longDescription:
+      "Khóa học C++ Cơ Bản dẫn dắt bạn từ những dòng code đầu tiên đến các khái niệm nền tảng quan trọng nhất của ngôn ngữ C++. Với phương pháp thực hành 60-70% mỗi buổi, bạn sẽ tự tin viết và chạy code ngay từ buổi học đầu tiên.",
+    duration: "28 tiết (9 buổi)",
+    learningOutcomes: [
+      "Cài đặt và sử dụng thành thạo môi trường lập trình C++ với VS Code và GCC.",
+      "Nắm vững các kiểu dữ liệu, khai báo biến, hằng số và phạm vi biến trong C++.",
+      "Sử dụng thành thạo tất cả các loại toán tử và hiểu thứ tự ưu tiên.",
+      "Viết cấu trúc điều kiện (if/else, switch) và vòng lặp (for, while, do-while) hiệu quả.",
+      "Thiết kế hàm: truyền tham trị, tham chiếu, hàm đệ quy và nạp chồng hàm.",
+      "Làm việc thành thạo với mảng 1D/2D, kiểu string và các thuật toán sắp xếp cơ bản.",
+      "Hiểu và sử dụng con trỏ, tham chiếu, cấp phát bộ nhớ động an toàn.",
+      "Tự tin giải các bài toán lập trình cơ bản và có nền tảng vững để học C++ nâng cao.",
+    ],
+    curriculum: [
+      {
+        title: "Chương 1: Làm Quen Với C++",
+        lessons: [
+          "Cài đặt môi trường: VS Code, GCC/MinGW trên Windows/macOS/Linux.",
+          "Cấu trúc file .cpp: #include, using namespace std, int main(), return 0.",
+          "Lệnh xuất cout: in chuỗi, in biến, in nhiều giá trị liên tiếp.",
+          "Lệnh nhập cin: đọc dữ liệu từ bàn phím.",
+          "Viết và chạy chương trình Hello World đầu tiên.",
+        ],
+      },
+      {
+        title: "Chương 2: Biến & Kiểu Dữ Liệu",
+        lessons: [
+          "Các kiểu dữ liệu cơ bản: int, long long, float, double, char, bool, string.",
+          "Khai báo và khởi tạo biến: cú pháp C++11 và từ khóa auto.",
+          "Hằng số: khai báo bằng const.",
+          "Chuyển đổi kiểu (Type Casting): C-style và static_cast<> kiểu C++.",
+          "Phạm vi biến (Scope): biến toàn cục, biến cục bộ, biến trong khối {}.",
+        ],
+      },
+      {
+        title: "Chương 3: Toán Tử & Biểu Thức",
+        lessons: [
+          "Toán tử số học: +, -, *, /, % và gán kết hợp +=, -=, *=, /=, %=.",
+          "Toán tử tăng giảm ++ và --: pre/post increment – cẩn thận với thứ tự.",
+          "Toán tử so sánh: ==, !=, >, <, >=, <=.",
+          "Toán tử logic: && (AND), || (OR), ! (NOT) và short-circuit evaluation.",
+          "Thứ tự ưu tiên toán tử và nguyên tắc dùng ngoặc đơn khi nghi ngờ.",
+        ],
+      },
+      {
+        title: "Chương 4: Cấu Trúc Điều Kiện",
+        lessons: [
+          "Lệnh if, if/else, if/else if/else: phân nhánh theo điều kiện.",
+          "switch-case: xử lý nhiều trường hợp, lưu ý fall-through và break.",
+          "Toán tử ba ngôi (Ternary): điều_kiện ? giá_trị_đúng : giá_trị_sai.",
+          "if lồng nhau (Nested if): ví dụ kiểm tra năm nhuận.",
+        ],
+      },
+      {
+        title: "Chương 5: Vòng Lặp",
+        lessons: [
+          "Vòng lặp for: cú pháp, đếm ngược, bước nhảy, range-based for (C++11).",
+          "Vòng lặp while: kiểm tra điều kiện trước khi chạy.",
+          "Vòng lặp do-while: chạy ít nhất 1 lần, kiểm tra điều kiện sau.",
+          "break: thoát khỏi vòng lặp; continue: bỏ qua iteration hiện tại.",
+          "Vòng lặp lồng nhau (Nested loop): ví dụ in bảng cửu chương.",
+        ],
+      },
+      {
+        title: "Chương 6: Hàm (Functions)",
+        lessons: [
+          "Khai báo và định nghĩa hàm: kiểu trả về, tên hàm, danh sách tham số.",
+          "Hàm void và hàm trả về giá trị; tham số mặc định (default parameter).",
+          "Truyền tham số: by value (bản sao) và by reference & (thay đổi biến gốc).",
+          "Hàm đệ quy (Recursion): base case và recursive case – giai thừa, Fibonacci.",
+          "Hàm nạp chồng (Function Overloading): cùng tên, khác tham số.",
+        ],
+      },
+      {
+        title: "Chương 7: Mảng & Chuỗi",
+        lessons: [
+          "Mảng 1 chiều: khai báo, khởi tạo, truy cập phần tử, duyệt bằng for.",
+          "Mảng 2 chiều: khai báo ma trận, truy cập hàng/cột, duyệt vòng lặp lồng.",
+          "Kiểu string: length(), at(), substr(), find(), replace(), nối chuỗi, so sánh.",
+          "Sắp xếp mảng: Bubble Sort và hàm sort() từ thư viện <algorithm>.",
+        ],
+      },
+      {
+        title: "Chương 8: Con Trỏ & Tham Chiếu",
+        lessons: [
+          "Tham chiếu (Reference): &ref là bí danh của biến, ứng dụng truyền hàm.",
+          "Con trỏ (Pointer): khai báo int* p, toán tử & (địa chỉ) và * (giải tham chiếu).",
+          "Con trỏ null: nullptr – luôn kiểm tra trước khi sử dụng.",
+          "Cấp phát bộ nhớ động: new/delete cho 1 phần tử và new[]/delete[] cho mảng.",
+          "Con trỏ và mảng: pointer arithmetic và truyền mảng cho hàm.",
+        ],
+      },
+    ],
+    targetAudience: [
+      "Người mới bắt đầu học lập trình, chưa biết bất kỳ ngôn ngữ nào.",
+      "Sinh viên CNTT muốn học C++ để thi lập trình hoặc phỏng vấn.",
+      "Đã biết ngôn ngữ khác (Python, Java...) và muốn học thêm C++.",
+      "Muốn học lập trình hệ thống, nhúng, game hoặc thi đấu lập trình (competitive programming).",
+      "Chuẩn bị nền tảng để học khóa C++ Nâng Cao.",
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty.",
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!",
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần.",
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />,
+      },
+    ],
+  },
+  {
+    id: "cpp-advanced",
+    title: "Khóa Học C++ Nâng Cao",
+    description: "Chinh phục C++ chuyên sâu: OOP, Template, STL, xử lý ngoại lệ, File I/O và dự án tổng hợp thực tế.",
+    level: "Nâng cao",
+    icon: <Cpu className="h-6 w-6 text-brand-blue" />,
+    features: [
+      "OOP C++: Class, Kế thừa, Đa hình, vtable",
+      "Template & STL: vector, map, set, algorithm",
+      "Xử lý ngoại lệ chuyên nghiệp (RAII)",
+      "File I/O và Filesystem C++17",
+      "Dự án tổng hợp cuối khoá",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "5.500.000đ",
+    longDescription:
+      "Khóa học C++ Nâng Cao đưa bạn từ lập trình thủ tục lên tư duy thiết kế hướng đối tượng chuyên nghiệp trong C++. Bạn sẽ nắm vững OOP, Generic Programming với Template, toàn bộ STL, xử lý ngoại lệ, File I/O và hoàn thành một dự án mini hoàn chỉnh.",
+    duration: "11 buổi",
+    learningOutcomes: [
+      "Thiết kế Class chuyên nghiệp: Constructor, Destructor, Member Initializer List, this pointer.",
+      "Áp dụng tính đóng gói với Access Modifiers, Operator Overloading và Static Members.",
+      "Triển khai kế thừa đơn và bội, hàm ảo (virtual), abstract class trong C++.",
+      "Hiểu sâu cơ chế đa hình tại thời điểm chạy: vtable, vptr, dynamic_cast, RTTI.",
+      "Viết Generic Programming với Function Template và Class Template.",
+      "Sử dụng thành thạo STL: vector, map, set, queue, stack, unordered_map và các thuật toán.",
+      "Xử lý ngoại lệ chuyên nghiệp: try/catch/throw, custom exception, mô hình RAII.",
+      "Đọc/ghi file text và binary, xử lý chuỗi với stringstream, quản lý file với filesystem C++17.",
+      "Hoàn thành dự án Hệ Thống Quản Lý Thư Viện tích hợp toàn bộ kiến thức.",
+    ],
+    curriculum: [
+      {
+        title: "Chương 1: OOP Cơ Bản trong C++",
+        lessons: [
+          "Class và Object: định nghĩa class, tạo object, truy cập thành viên bằng (.).",
+          "Constructor mặc định và Constructor có tham số.",
+          "Destructor: tự động giải phóng tài nguyên khi object bị hủy.",
+          "Member Initializer List: cách khởi tạo hiệu quả, bắt buộc với const member.",
+          "this pointer: phân biệt thuộc tính và tham số; method chaining với return *this.",
+        ],
+      },
+      {
+        title: "Chương 2: Tính Đóng Gói (Encapsulation)",
+        lessons: [
+          "Access Modifiers: private, protected, public – ứng dụng thực tế qua ví dụ TaiKhoanNganHang.",
+          "Getter (const) và Setter có validation logic.",
+          "Operator Overloading: nạp chồng +, -, ==, << cho class Vector2D.",
+          "Static Members: biến và phương thức tĩnh dùng chung cho toàn bộ class.",
+        ],
+      },
+      {
+        title: "Chương 3: Kế Thừa (Inheritance)",
+        lessons: [
+          "Kế thừa đơn: từ khóa public, protected, private inheritance.",
+          "Gọi Constructor lớp cha từ lớp con qua initializer list.",
+          "Hàm ảo (virtual function) và từ khóa override – kiểm tra tại compile-time.",
+          "Abstract Class: pure virtual function (= 0) và không thể khởi tạo trực tiếp.",
+          "Kế thừa bội (Multiple Inheritance) và cảnh báo Diamond Problem.",
+        ],
+      },
+      {
+        title: "Chương 4: Đa Hình (Polymorphism)",
+        lessons: [
+          "Runtime Polymorphism qua con trỏ base class trỏ đến object derived.",
+          "Cơ chế vtable và vptr: cách C++ thực hiện dynamic dispatch.",
+          "dynamic_cast an toàn và static_cast – sự khác biệt và rủi ro.",
+          "RTTI với typeid(): lấy thông tin kiểu tại runtime.",
+          "Đa hình với std::vector và unique_ptr (Modern C++ style).",
+        ],
+      },
+      {
+        title: "Chương 5: Template & STL",
+        lessons: [
+          "Function Template: viết một hàm dùng cho nhiều kiểu dữ liệu.",
+          "Class Template: ví dụ Generic Stack<T> hoạt động với mọi kiểu.",
+          "STL Containers: vector, map, set, queue, stack, unordered_map.",
+          "STL Algorithms: sort, find, accumulate, for_each với lambda expression.",
+          "Iterator và C++17 Structured Bindings (auto& [key, val]).",
+        ],
+      },
+      {
+        title: "Chương 6: Xử Lý Ngoại Lệ (Exception Handling)",
+        lessons: [
+          "try / catch / throw: cơ chế cơ bản và catch(...) bắt mọi ngoại lệ.",
+          "Các class exception có sẵn: runtime_error, logic_error, out_of_range.",
+          "Custom Exception: tạo lớp exception riêng kế thừa từ std::exception.",
+          "Mô hình RAII (Resource Acquisition Is Initialization): quản lý tài nguyên tự động.",
+          "noexcept: đánh dấu hàm không ném ngoại lệ để trình biên dịch tối ưu.",
+        ],
+      },
+      {
+        title: "Chương 7: File I/O",
+        lessons: [
+          "Ghi/đọc file text với ofstream và ifstream: getline(), đọc từng từ.",
+          "Append vào file với ios::app; kiểm tra lỗi mở file.",
+          "File binary: ghi/đọc raw bytes với write() và read() – ví dụ struct HocSinh.",
+          "stringstream: xây dựng chuỗi phức tạp (ostringstream) và parse chuỗi (istringstream).",
+          "Filesystem C++17: kiểm tra tồn tại, tạo thư mục, liệt kê, copy, xóa file.",
+        ],
+      },
+      {
+        title: "Chương 8: Dự Án Tổng Hợp – Hệ Thống Quản Lý Thư Viện",
+        lessons: [
+          "Thiết kế class diagram: Item (abstract), Sach, TapChi, DocGia, ThuVien.",
+          "CRUD Sách và Độc Giả với STL map và unique_ptr.",
+          "Chức năng mượn/trả sách có kiểm tra hợp lệ bằng Exception Handling.",
+          "Tìm kiếm theo tên, tác giả, năm bằng STL algorithm và lambda.",
+          "Lưu/tải dữ liệu từ file; thống kê sách mượn nhiều nhất.",
+        ],
+      },
+    ],
+    targetAudience: [
+      "Đã hoàn thành khóa C++ Cơ Bản hoặc có kiến thức tương đương.",
+      "Sinh viên CNTT muốn nắm vững OOP và các kỹ thuật C++ hiện đại.",
+      "Lập trình viên muốn viết code C++ chuyên nghiệp, hiệu năng cao.",
+      "Người chuẩn bị phỏng vấn các vị trí Backend, Embedded hoặc Game Developer.",
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty.",
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!",
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần.",
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />,
+      },
+    ],
+  },
+  {
+    id: "java",
+    title: "Khóa Học Java Từ Cơ Bản Đến Nâng Cao",
+    description: "Học Java bài bản từ cú pháp đến OOP, Collections, xử lý ngoại lệ và lập trình ứng dụng thực tế.",
+    level: "Trung bình",
+    icon: <Coffee className="h-6 w-6 text-brand-blue" />,
+    features: [
+      "Cú pháp Java và OOP thực chiến",
+      "Collections Framework",
+      "Xử lý ngoại lệ và I/O",
+      "Đồ án cuối khoá thực tế",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "7.000.000đ",
   },
 ];

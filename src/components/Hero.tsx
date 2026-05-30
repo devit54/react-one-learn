@@ -3,7 +3,7 @@ import { Code, BookOpen, Monitor, PenTool, FolderGit } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="py-16 lg:py-20">
+    <section className="py-16 lg:py-20 overflow-hidden">
       <div className="container flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         <div className="flex-1 space-y-6 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight heading">
@@ -46,7 +46,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 relative">
+        <div className="flex-1 relative w-full">
           <div className="bg-brand-blue/10 rounded-full w-72 h-72 absolute -top-6 -left-6 blur-3xl"></div>
           <div className="relative bg-white rounded-lg shadow-xl border p-6 lg:p-8">
             <div className="bg-brand-lightBlue p-4 rounded-lg mb-4 w-full border border-brand-blue/20">

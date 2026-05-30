@@ -52,7 +52,7 @@ const Features = () => {
       <div className="container space-y-12">
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold heading">
-            Tại sao chọn phương pháp<span className="gradient-text">dạy kèm 1-1</span> của chúng tôi?
+            Tại sao chọn phương pháp <span className="gradient-text">dạy kèm 1-1</span> của chúng tôi?
           </h2>
           <p className="text-lg text-muted-foreground">
             Khám phá những lợi ích độc đáo từ phương pháp giảng dạy tập trung

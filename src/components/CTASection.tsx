@@ -1,11 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 
 const CTASection = () => {
-  const handleZaloContact = () => {
-    window.open("https://zalo.me/your-zalo-id", "_blank");
-  };
-
   return (
     <section className="py-16 lg:py-20 bg-brand-blue text-white">
       <div className="container">
@@ -36,9 +31,9 @@ const CTASection = () => {
             </form>
           </div> */}
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <MessageCircle size={18} />
-            Liên Hệ Zalo hoặc SĐT: 0379 386 629 (Lợi)
+          <div className="flex items-center justify-center gap-2">
+            <MessageCircle size={18} className="shrink-0" />
+            <span>Liên Hệ Zalo hoặc SĐT: 0379 386 629 (Lợi)</span>
           </div>
           {/* <Button
             onClick={handleZaloContact}
