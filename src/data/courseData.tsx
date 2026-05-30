@@ -806,10 +806,10 @@ export const courseData: Course[] = [
       "Thực hành bài tập cuối chương",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "4.000.000đ",
+    price: "6.500.000đ",
     longDescription:
       "Khóa học Lập Trình Hướng Đối Tượng (OOP) giúp bạn nắm vững tư duy thiết kế phần mềm hiện đại. Từ khái niệm Class, Object đến 4 tính chất cốt lõi: Encapsulation, Inheritance, Abstraction và Polymorphism – bạn sẽ có nền tảng vững chắc để học bất kỳ ngôn ngữ lập trình nào.",
-    duration: "20 giờ (8 buổi)",
+    duration: "30 giờ (12 buổi)",
     learningOutcomes: [
       "Hiểu rõ sự khác biệt giữa lập trình thủ tục và lập trình hướng đối tượng.",
       "Định nghĩa và sử dụng Class, Object, Attributes, Methods thành thạo.",
@@ -903,6 +903,12 @@ export const courseData: Course[] = [
           "Ép kiểu đối tượng: Upcasting (an toàn) và Downcasting (tiềm ẩn rủi ro).",
           "Toán tử instanceof và xử lý ClassCastException.",
           "Bài tập cuối chương.",
+        ],
+      },
+      {
+        title: "Rèn Luyện Bài Tập Lập Trình Hướng Đối Tượng (4 buổi)",
+        lessons: [
+          "Hướng dẫn giải bài tập OOP theo chuyên đề thực tế do giảng viên đưa ra.",
         ],
       },
     ],
