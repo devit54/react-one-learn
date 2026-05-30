@@ -1240,10 +1240,10 @@ export const courseData: Course[] = [
       "Thuật toán cơ bản thực chiến",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "7.000.000đ",
+    price: "8.000.000đ",
     longDescription:
       "Khóa học Java giúp bạn xây dựng nền tảng lập trình vững chắc với ngôn ngữ đa nền tảng được sử dụng rộng rãi trong doanh nghiệp, Android và big data. Từ cú pháp cơ bản, kiểu dữ liệu, vòng lặp, mảng cho đến các thuật toán cơ bản – bạn sẽ được thực hành code trực tiếp mỗi buổi học.",
-    duration: "40 tiết (10 buổi)",
+    duration: "56 tiết (14 buổi)",
     updateDate: "05/2026",
     learningOutcomes: [
       "Cài đặt và sử dụng thành thạo JDK và IntelliJ IDEA để lập trình Java.",
@@ -1353,6 +1353,13 @@ export const courseData: Course[] = [
           "Thuật toán tìm Max: khởi tạo bằng phần tử đầu tiên, duyệt từ phần tử thứ hai.",
           "Thuật toán tìm Min: tương tự Max, cập nhật khi tìm thấy số nhỏ hơn.",
           "Kỹ thuật duyệt phần tử liền kề: so sánh array[i] và array[i+1], giới hạn i < length - 1.",
+        ],
+      },
+      {
+        title: "Chương 9: Hướng Dẫn Giải Bài Tập Theo Chuyên Đề (4 buổi)",
+        lessons: [
+          "Hướng dẫn giải bài tập theo chuyên đề thực tế do giảng viên đưa ra.",
+          "Giải bài tập theo chuyên đề chuyên sâu (mỗi buổi 2.5h – thêm 500.000đ/buổi).",
         ],
       },
     ],
