@@ -45,7 +45,7 @@ export const courseData: Course[] = [
       "Hỗ trợ 1-1 từ giảng viên",
     ],
     price: "5.500.000đ",
-    updateDate: "12/2025",
+    updateDate: "6/2026",
     students: 8891,
     learningOutcomes: [
       "Tự tin xây dựng và thiết kế website từ đầu đến cuối.",
@@ -1384,6 +1384,145 @@ export const courseData: Course[] = [
           "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
           "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
           "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để đi làm công ty.",
+        ],
+        icon: <Users className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Học online - Tiết kiệm thời gian di chuyển",
+        details: [
+          "Thay vì phải di chuyển vất vả trên đường giữa dòng người đông đúc. Giờ đây, bạn chỉ cần mở laptop để bắt đầu học ngay tại nhà. Tiết kiệm thời gian, tránh căng thẳng, và tập trung hoàn toàn vào việc học!",
+        ],
+        icon: <Laptop className="w-10 h-10 text-brand-blue" />,
+      },
+      {
+        title: "Lịch học linh hoạt",
+        details: [
+          "LearnCode sắp xếp lịch học theo ý của bạn. Học đúng thời điểm mà bạn cảm thấy thoải mái nhất.",
+          "Dễ dàng thay đổi lịch học trong khi học nếu bạn có việc bận. Không làm gián đoạn tiến độ học tập của bạn.",
+          "LearnCode có thể sắp xếp thời gian học cho bạn từ 8h đến 23h, kể cả cuối tuần.",
+        ],
+        icon: <Calendar className="w-10 h-10 text-brand-blue" />,
+      },
+    ],
+  },
+  {
+    id: "hrm-vibe-code",
+    title: "Xây Dựng Web HRM Theo Kiểu Vibe Code",
+    description:
+      "Khóa học thực chiến cho người làm sản phẩm: xây dựng hệ thống quản lý nhân sự (HRM) hoàn chỉnh bằng công cụ AI mà không cần học lập trình chuyên sâu.",
+    level: "Cơ bản",
+    icon: <Laptop className="h-6 w-6 text-brand-blue" />,
+    features: [
+      "Vibe coding với AI: Cursor, Claude, v0.dev",
+      "Xây dựng HRM hoàn chỉnh từ đầu đến cuối",
+      "Quản lý nhân viên, chấm công, nghỉ phép",
+      "Deploy sản phẩm lên Vercel",
+      "Hỗ trợ 1-1 từ giảng viên",
+    ],
+    price: "6.000.000đ",
+    longDescription:
+      "Khóa học dành cho người làm sản phẩm, founder, và những ai muốn xây dựng ứng dụng web thực tế mà không cần đi sâu vào lập trình. Bằng cách tận dụng các công cụ AI như Cursor, Claude và v0.dev, bạn sẽ hoàn thành một hệ thống HRM đầy đủ chức năng trong thời gian ngắn nhất.",
+    duration: "20 giờ (8 buổi)",
+    updateDate: "05/2026",
+    learningOutcomes: [
+      "Hiểu triết lý Vibe Coding: xây dựng sản phẩm nhanh bằng AI mà không cần học sâu.",
+      "Sử dụng thành thạo Cursor và Claude để sinh code, sửa lỗi và mở rộng tính năng.",
+      "Thiết kế giao diện HRM nhanh chóng với v0.dev.",
+      "Xây dựng các trang cốt lõi: Dashboard, Quản lý nhân viên, Chấm công, Nghỉ phép.",
+      "Kết nối và quản lý database với Supabase (không cần kiến thức backend sâu).",
+      "Triển khai hệ thống Authentication: đăng nhập, phân quyền theo vai trò.",
+      "Deploy sản phẩm lên Vercel và bàn giao hoàn chỉnh.",
+      "Tự tin mở rộng và bảo trì sản phẩm sau khi hoàn thành khóa học.",
+    ],
+    curriculum: [
+      {
+        title: "Buổi 1: Vibe Code & Thiết Lập Môi Trường",
+        lessons: [
+          "Vibe coding là gì? Triết lý xây dựng sản phẩm nhanh với AI.",
+          "Giới thiệu bộ công cụ: Cursor, Claude, v0.dev, Supabase, Vercel.",
+          "Cài đặt Cursor và cấu hình AI assistant.",
+          "Khởi tạo dự án Next.js với Cursor.",
+          "Hướng dẫn cách ra lệnh (prompt) cho AI để sinh code hiệu quả.",
+        ],
+      },
+      {
+        title: "Buổi 2: Thiết Kế Giao Diện & Cấu Trúc HRM",
+        lessons: [
+          "Phân tích yêu cầu hệ thống HRM: các module cần thiết.",
+          "Thiết kế giao diện nhanh với v0.dev: layout, màu sắc, component.",
+          "Xây dựng Layout chính: Sidebar, Header, Dashboard tổng quan.",
+          "Lên cấu trúc dữ liệu nhân sự (không cần hiểu sâu về database).",
+        ],
+      },
+      {
+        title: "Buổi 3: Kết Nối Database với Supabase",
+        lessons: [
+          "Giới thiệu Supabase: database không cần quản lý server.",
+          "Tạo bảng dữ liệu: nhân viên, phòng ban, chức vụ.",
+          "Kết nối Supabase vào dự án Next.js bằng Cursor.",
+          "Thao tác CRUD cơ bản với Supabase qua AI.",
+        ],
+      },
+      {
+        title: "Buổi 4: Module Quản Lý Nhân Viên",
+        lessons: [
+          "Trang danh sách nhân viên: hiển thị, tìm kiếm, lọc.",
+          "Form thêm mới và chỉnh sửa thông tin nhân viên.",
+          "Upload ảnh đại diện nhân viên.",
+          "Xóa và vô hiệu hóa tài khoản nhân viên.",
+        ],
+      },
+      {
+        title: "Buổi 5: Module Chấm Công & Nghỉ Phép",
+        lessons: [
+          "Xây dựng trang chấm công: check-in, check-out.",
+          "Hiển thị lịch sử chấm công theo ngày/tháng.",
+          "Form đăng ký nghỉ phép và theo dõi trạng thái duyệt.",
+          "Phê duyệt/từ chối đơn nghỉ phép (vai trò quản lý).",
+        ],
+      },
+      {
+        title: "Buổi 6: Authentication & Phân Quyền",
+        lessons: [
+          "Tích hợp đăng nhập với Supabase Auth.",
+          "Phân quyền theo vai trò: Admin, HR, Nhân viên.",
+          "Bảo vệ các trang theo quyền truy cập.",
+          "Trang hồ sơ cá nhân và đổi mật khẩu.",
+        ],
+      },
+      {
+        title: "Buổi 7: Báo Cáo & Hoàn Thiện Sản Phẩm",
+        lessons: [
+          "Trang báo cáo: thống kê nhân sự, chấm công theo tháng.",
+          "Xuất báo cáo ra file (Excel/PDF) bằng AI.",
+          "Tối ưu giao diện và xử lý các lỗi còn tồn đọng.",
+          "Kiểm thử toàn bộ luồng sử dụng của sản phẩm.",
+        ],
+      },
+      {
+        title: "Buổi 8: Deploy & Bàn Giao Sản Phẩm",
+        lessons: [
+          "Deploy ứng dụng lên Vercel: cấu hình domain và biến môi trường.",
+          "Kết nối tên miền riêng (nếu có).",
+          "Hướng dẫn bảo trì, mở rộng tính năng sau khi deploy.",
+          "Tổng kết và định hướng phát triển sản phẩm tiếp theo.",
+        ],
+      },
+    ],
+    targetAudience: [
+      "Người làm sản phẩm (Product Manager, founder, entrepreneur) muốn tự xây dựng công cụ nội bộ.",
+      "Chủ doanh nghiệp muốn có hệ thống HRM riêng mà không thuê đội dev.",
+      "HR Manager muốn hiểu và tự làm công cụ hỗ trợ công việc.",
+      "Người không có nền tảng lập trình nhưng muốn xây dựng sản phẩm thực tế.",
+      "Lập trình viên muốn học cách làm sản phẩm nhanh hơn với AI.",
+    ],
+    courseBenefits: [
+      {
+        title: "Học 1 Kèm 1 - Đảm bảo chất lượng Tốt Nhất",
+        details: [
+          "Bạn sẽ được theo sát và hỗ trợ 1-1 bởi giảng viên. Đảm bảo chất lượng học tập đạt kết quả tốt nhất.",
+          "Nếu HỌC CHẬM bạn không cần lo lắng không theo kịp chương trình, giảng viên sẽ đi chậm để đảm bảo bạn nắm chắc 100% kiến thức.",
+          "Nếu học nhanh, bạn có thể nhanh chóng kết thúc chương trình để có sản phẩm đưa vào sử dụng.",
         ],
         icon: <Users className="w-10 h-10 text-brand-blue" />,
       },

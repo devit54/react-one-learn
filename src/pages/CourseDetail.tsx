@@ -293,7 +293,7 @@ const CourseDetail = () => {
                         <div className="text-sm text-muted-foreground">
                           Thời lượng
                         </div>
-                        <div>{course.duration || "15 giờ"}</div>
+                        <div>{course.duration || "20 giờ (8 buổi)"}</div>
                       </div>
                       <div>
                         <div className="text-sm text-muted-foreground">
