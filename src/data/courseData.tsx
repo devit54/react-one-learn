@@ -707,7 +707,7 @@ export const courseData: Course[] = [
       "Quản lý các phiên bản thay đổi tiện lợi, nhanh chóng",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "2.500.000đ",
+    price: "3.000.000đ",
     updateDate: "12/2025",
     students: 10000,
     learningOutcomes: [
