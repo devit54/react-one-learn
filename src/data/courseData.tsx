@@ -806,7 +806,7 @@ export const courseData: Course[] = [
       "Thực hành bài tập cuối chương",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "6.500.000đ",
+    price: "6.600.000đ",
     longDescription:
       "Khóa học Lập Trình Hướng Đối Tượng (OOP) giúp bạn nắm vững tư duy thiết kế phần mềm hiện đại. Từ khái niệm Class, Object đến 4 tính chất cốt lõi: Encapsulation, Inheritance, Abstraction và Polymorphism – bạn sẽ có nền tảng vững chắc để học bất kỳ ngôn ngữ lập trình nào.",
     duration: "30 giờ (12 buổi)",
@@ -949,7 +949,7 @@ export const courseData: Course[] = [
   },
   {
     id: "cpp-basics",
-    title: "Khóa Học C++ Từ Cơ Bản Đến Thành Thạo",
+    title: "Khóa Học C++ Sơ Cấp(Cơ Bản)",
     description: "Học lập trình C++ từ nền tảng – ngôn ngữ mạnh mẽ được dùng rộng rãi trong hệ thống, game, nhúng và thi đấu lập trình.",
     level: "Cơ bản",
     icon: <Code className="h-6 w-6 text-brand-blue" />,
@@ -960,7 +960,7 @@ export const courseData: Course[] = [
       "Thực hành code trực tiếp mỗi buổi",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "5.000.000đ",
+    price: "5.400.000đ",
     longDescription:
       "Khóa học C++ Cơ Bản dẫn dắt bạn từ những dòng code đầu tiên đến các khái niệm nền tảng quan trọng nhất của ngôn ngữ C++. Với phương pháp thực hành 60-70% mỗi buổi, bạn sẽ tự tin viết và chạy code ngay từ buổi học đầu tiên.",
     duration: "28 tiết (9 buổi)",
@@ -1091,7 +1091,7 @@ export const courseData: Course[] = [
   },
   {
     id: "cpp-advanced",
-    title: "Khóa Học C++ Nâng Cao",
+    title: "Khóa Học C++ Trung Cấp",
     description: "Chinh phục C++ chuyên sâu: OOP, Template, STL, xử lý ngoại lệ, File I/O và dự án tổng hợp thực tế.",
     level: "Nâng cao",
     icon: <Cpu className="h-6 w-6 text-brand-blue" />,
@@ -1103,7 +1103,7 @@ export const courseData: Course[] = [
       "Dự án tổng hợp cuối khoá",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "6.000.000đ",
+    price: "6.600.000đ",
     longDescription:
       "Khóa học C++ Nâng Cao đưa bạn từ lập trình thủ tục lên tư duy thiết kế hướng đối tượng chuyên nghiệp trong C++. Bạn sẽ nắm vững OOP, Generic Programming với Template, toàn bộ STL, xử lý ngoại lệ, File I/O và hoàn thành một dự án mini hoàn chỉnh.",
     duration: "11 buổi",
