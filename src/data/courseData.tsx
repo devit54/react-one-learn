@@ -559,10 +559,10 @@ export const courseData: Course[] = [
       "Tối ưu về SEO",
       "Hỗ trợ 1-1 từ giảng viên",
     ],
-    price: "6.990.000đ",
+    price: "7.800.000đ",
     longDescription:
       "Khóa học Next.js sẽ giúp bạn làm chủ App Router và các tính năng mới nhất trong phiên bản Next.js 16. Học cách xây dựng ứng dụng web hiệu suất cao với thư viện Redux, tối ưu SEO, và triển khai nhanh chóng trên các nền tảng cloud như Vercel.",
-    duration: "30 giờ (12 buổi)",
+    duration: "32 giờ (13 buổi)",
     learningOutcomes: [
       "Hiểu rõ kiến trúc và lợi ích của App Router trong Next.js 16.",
       "Thành thạo quản lý routes, layouts, và nested routing trong App Router.",
